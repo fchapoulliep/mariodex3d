@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="84.634338"
+   height="94"
+   viewBox="0 0 84.634338 94"
+   id="svg4947"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="SMO Art - Regional Coin (Moon).svg">
+  <defs
+     id="defs4949" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#c8c8c8"
+     bordercolor="#000000"
+     borderopacity="1"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="40.788081"
+     inkscape:cy="45.490983"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     borderlayer="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1057"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4952">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-294.62195,-531.93833)">
+    <path
+       style="opacity:1;fill:#d0bd6f;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 336.93928,531.93833 c -9.4501,0 -10.95332,9.12835 -19.13735,13.8534 -8.18402,4.72505 -16.84104,1.46248 -21.56609,9.64651 -4.72505,8.18402 2.42913,14.05019 2.42913,23.50028 0,9.4501 -7.15418,15.31588 -2.42913,23.49991 4.72505,8.18402 13.38207,4.92146 21.56609,9.6465 8.18403,4.72505 9.68725,13.8534 19.13735,13.8534 9.4501,0 10.95294,-9.12835 19.13696,-13.8534 8.18403,-4.72504 16.84104,-1.46248 21.56609,-9.6465 4.72505,-8.18403 -2.42874,-14.04981 -2.42874,-23.49991 0,-9.45009 7.15379,-15.31626 2.42874,-23.50028 -4.72504,-8.18403 -13.38206,-4.92146 -21.56609,-9.64651 -8.18402,-4.72505 -9.68686,-13.8534 -19.13696,-13.8534 z m 32.03984,37.53973 -3.38275,8.76107 1.62308,18.32267 -16.79089,5.74085 -13.58605,10.83143 9.74825,-23.00536 13.70805,-2.16828 1.46862,-13.70816 z"
+       id="path4144"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssssssssssssccccccccc" />
+  </g>
+</svg>

@@ -15,77 +15,77 @@
 
 .mario-cards {
   background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
+  background-position: top left;
+  background-size: 160%;
 }
 
 .mario-cards.mushroom-kingdom {
-  background-color: #d93a2b; /* Vibrant Red */
+  background-color: #d93a2b;
   background-image: url("../assets/card-types/mushroom-kingdom.svg");
 }
 
 .mario-cards.wooded-kingdom {
-  background-color: #3e7d2a; /* Deep Forest Green */
-  background-image: url("../assets/card-types/wood-kingdom.svg");
+  background-color: #3e7d2a;
+  background-image: url("../assets/card-types/wooded-kingdom.svg");
 }
 
 .mario-cards.cloud-kingdom {
-  background-color: #c7e3f2; /* Soft Sky Blue */
+  background-color: #c7e3f2;
   background-image: url("../assets/card-types/cloud-kingdom.svg");
 }
 
 .mario-cards.bowser-kingdom {
-  background-color: #4a2f2f; /* Dark Charcoal with a Hint of Red */
-  background-image: url("../assets/card-types/bowser-kingdom.webp");
+  background-color: #4a2f2f;
+  background-image: url("../assets/card-types/bowser-kingdom.svg");
 }
 
 .mario-cards.lake-kingdom {
-  background-color: #6aa7e6; /* Clear Water Blue */
+  background-color: #6aa7e6;
   background-image: url("../assets/card-types/lake-kingdom.svg");
 }
 
 .mario-cards.seaside-kingdom {
-  background-color: #55c2a5; /* Tropical Ocean Teal */
+  background-color: #55c2a5;
   background-image: url("../assets/card-types/seaside-kingdom.svg");
 }
 
 .mario-cards.luncheon-kingdom {
-  background-color: #ff7675; /* Bright Pinkish-Red (Food Inspired) */
+  background-color: #ff7675;
   background-image: url("../assets/card-types/luncheon-kingdom.svg");
 }
 
 .mario-cards.sand-kingdom {
-  background-color: #e0c38c; /* Warm Desert Sand */
+  background-color: #e0c38c;
   background-image: url("../assets/card-types/sand-kingdom.svg");
 }
 
 .mario-cards.snow-kingdom {
-  background-color: #dfdede; /* Pure Snow White */
+  background-color: #dfdede;
   background-image: url("../assets/card-types/snow-kingdom.svg");
 }
 
 .mario-cards.cascade-kingdom {
-  background-color: #5dc9a2; /* Lush Waterfall Green */
+  background-color: #5dc9a2;
   background-image: url("../assets/card-types/cascade-kingdom.svg");
 }
 
 .mario-cards.cap-kingdom {
-  background-color: #5c5c76; /* Dark Blue-Grey (Hat Theme) */
+  background-color: #5c5c76;
   background-image: url("../assets/card-types/cap-kingdom.svg");
 }
 
 .mario-cards.moon-kingdom {
-  background-color: #f8e6a0; /* Pale Moon Yellow */
+  background-color: #f8e6a0;
   background-image: url("../assets/card-types/moon-kingdom.svg");
 }
 
 .mario-cards.ruined-kingdom {
-  background-color: #656565; /* Dark Stone Grey */
+  background-color: #656565;
   background-image: url("../assets/card-types/ruined-kingdom.svg");
 }
 
 .mario-cards.metro-kingdom {
-  background-color: #e03e36; /* Classic Red to Match New Donk City */
+  background-color: #f47069;
   background-image: url("../assets/card-types/metro-kingdom.svg");
 }
 
