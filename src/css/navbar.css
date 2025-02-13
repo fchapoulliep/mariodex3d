@@ -8,10 +8,6 @@
   top: 0;
   z-index: 1000;
   color: white;
-  background-image: url("../assets/icons/navbar.png");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
 }
 
 #navbar .navbar-mario {
@@ -20,6 +16,8 @@
   display: flex;
   align-items: center;
   transition: 200ms all;
+  background-color: rgba(0, 0 , 0, 0.7);
+  border-radius: 0 0 100px 100px;
 }
 
 #navbar .navbar-mario div {

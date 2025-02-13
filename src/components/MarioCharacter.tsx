@@ -43,6 +43,7 @@ interface MarioModelProps {
 const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
   const { scene, animations } = useGLTF(modelPath);
   const mixer = new THREE.AnimationMixer(scene);
+  const [minZoomDistance, setMinZoomDistance] = React.useState(0);
 
   useEffect(() => {
     if (animations.length > 0) {
@@ -79,7 +80,13 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
       box.getCenter(center);
 
       scene.position.y -= center.y;
+
+      const size = new THREE.Vector3();
+      box.getSize(size);
+
+      setMinZoomDistance(Math.max(size.x, size.y, size.z) * 0.5);
     }
+
   }, [scene]);
 
   return (
@@ -93,6 +100,7 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
           enableRotate
           target={[0, 0, 0]}
           autoRotate
+          minDistance={minZoomDistance}
         />
       </Bounds>
     </group>
