@@ -1,0 +1,88 @@
+#naruto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+#naruto-overlay .naruto-description {
+  position: absolute;
+  left: 0%;
+  bottom: 5%;
+  font-style: italic;
+  border-radius: 0 15px 15px 0;
+  padding-left: 10px;
+  padding-right: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  min-width: 20%;
+  max-width: 30%;
+  z-index: 1;
+  transition: 200ms all;
+  padding-bottom: 4px;
+  background-image: url("../assets/icons/description.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 200%;
+}
+
+#naruto-overlay .naruto-description h2 {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+#naruto-overlay .naruto-description p {
+  margin: 5px 0;
+}
+
+#naruto-overlay .naruto-types {
+  position: absolute;
+  right: 0%;
+  bottom: 5%;
+  font-style: italic;
+  border-radius: 15px 0 0 15px;
+  background-image: url("../assets/icons/navbar.png");
+  background-repeat: no-repeat;
+  background-position: 10%;
+  background-size: 150%;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 20%;
+  max-width: 40%;
+  padding: 5px;
+  padding-left: 20px;
+  z-index: 1;
+}
+
+@media (max-width: 850px) {
+  #naruto-overlay p {
+    font-size: 11px;
+  }
+
+  #naruto-overlay h2 {
+    font-size: 16px;
+  }
+
+  #naruto-overlay .naruto-types img {
+    width: 16px;
+    height: 16px;
+  }
+
+  #naruto-overlay .naruto-types .type-div:first-child p {
+    margin-right: 5px;
+  }
+}

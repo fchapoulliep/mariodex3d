@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Redressed&display=swap");
+
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500vw;
+  height: 500vw;
+  background-color: rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  z-index: 1000000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader.animation {
+  animation: shrinkToCenter 1s forwards;
+}
+
+@keyframes shrinkToCenter {
+  0% {
+    transform: translate(-50%, -50%) scale(1); /* Starts centered and full size */
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0); /* Shrinks toward the center */
+    opacity: 0;
+  }
+}
+
+.eye {
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  background-color: #640606;
+  position: absolute;
+  border: 5px solid #000000;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+.sharingan {
+  position: relative;
+  animation: loader 2s infinite linear;
+}
+#pupil {
+  fill: black;
+}
+#iris {
+  stroke-width: 8px;
+  stroke: rgba(60, 6, 6, 0.75);
+  fill: rgba(60, 6, 6, 0.9);
+}
+.iris_anomaly {
+  fill: black;
+  font-size: 100px;
+  font-family: "Redressed", cursive;
+}
+
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

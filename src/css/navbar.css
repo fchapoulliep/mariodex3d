@@ -1,0 +1,64 @@
+#navbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  height: 55px;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  color: white;
+  background-image: url("../assets/icons/navbar.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+#navbar .navbar-naruto {
+  width: 70%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  transition: 200ms all;
+}
+
+#navbar .navbar-naruto div {
+  width: 33.333%;
+  display: flex;
+}
+
+#navbar .navbar-naruto div:nth-child(1) {
+  justify-content: flex-end;
+}
+
+#navbar .navbar-naruto div:nth-child(2) {
+  justify-content: center;
+}
+
+#navbar .navbar-naruto div:nth-child(3) {
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 1280px) {
+  #navbar p,
+  #navbar a {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  #navbar .navbar-naruto {
+    width: 95%;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  #navbar .navbar-naruto div {
+    width: auto;
+  }
+
+  #navbar p,
+  #navbar a {
+    font-size: 10px;
+  }
+}
