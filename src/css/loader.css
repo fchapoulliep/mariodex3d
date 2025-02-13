@@ -30,6 +30,7 @@
     opacity: 0;
   }
 }
+
 .board {
   height: 175px;
   width: 175px;
@@ -38,7 +39,7 @@
   background-image: linear-gradient(#fcf988, #ede600, #7d7904);
 
   -webkit-animation: float 1.5s infinite linear;
-  animation: float 1.5s infinite linear;
+  animation: float 1s infinite linear;
 }
 
 @-webkit-keyframes float {
@@ -46,7 +47,7 @@
     top: 0;
   }
   50% {
-    top: 35px;
+    top: 50px;
   }
   100% {
     top: 0;
@@ -66,8 +67,9 @@
 }
 
 .corner {
-  background: #000;
+  background: rgba(0, 0, 0, 1);
   position: absolute;
+  border: 1px solid transparent;
 }
 
 .c-1 {

@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.mario-type {
+#mariodex .mario-type {
   display: block;
   border-radius: 100%;
   width: fit-content;
@@ -12,7 +12,17 @@
   margin: 7px 0px;
 }
 
+#mario-overlay .mario-type {
+  height: 24px;
+  width: 24px;
+  margin: 4px 5px;
+}
+
 .type-div p {
   margin: 0;
   font-size: 13px;
+}
+
+#mario-overlay .type-div p {
+  font-size: 16px;
 }

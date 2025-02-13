@@ -85,10 +85,11 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
   return (
     <group>
       <Bounds fit clip observe margin={1.5}>
-        <primitive object={scene}/>
-        <PerspectiveCamera makeDefault position={[0, 20, 50]} />
+        <primitive object={scene} />
+        <PerspectiveCamera makeDefault position={[0, 10, 50]} />
         <OrbitControls
-          maxDistance={80}
+          enableDamping
+          dampingFactor={0.25}
           enableRotate
           target={[0, 0, 0]}
           autoRotate
@@ -159,8 +160,10 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
         backgroundImage: `url(${
           import.meta.env.BASE_URL
         }backgrounds/${mariocharacter.city[0]
+          .normalize("NFD")
           .toLowerCase()
-          .replace(/ /g, "-")}.png)`,
+          .replace(/ /g, "-")
+          .replace("'s", "")}.webp)`,
         backgroundPosition: "bottom",
         backgroundSize: "cover",
       }}

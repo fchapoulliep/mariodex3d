@@ -770,7 +770,7 @@
   {
     "name": "Senobi",
     "id": 130,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
+    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
     "description": "A tall, stretching creature that helps Mario reach high places, primarily found in the Mushroom Kingdom but also in the Wooded Kingdom."
   },
   {
