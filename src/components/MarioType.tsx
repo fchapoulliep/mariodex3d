@@ -26,12 +26,14 @@ const MarioType: React.FC<MarioTypeProps> = ({ type }) => {
         className="mario-type"
         id={type
           .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
+          .replace(" ", "-")
+          .replace("'s", "")
           .toLowerCase()}
-        src={`${import.meta.env.BASE_URL}/type_icons/${type
+        src={`${import.meta.env.BASE_URL}type_icons/${type
           .normalize("NFD")
-          .replace(/[\u0300-\u036f]/g, "")
-          .toLowerCase()}.png`}
+          .replace(" ", "-")
+          .replace("'s", "")
+          .toLowerCase()}.webp`}
         alt={type}
       />
       <p>{type.charAt(0).toUpperCase() + type.slice(1)}</p>

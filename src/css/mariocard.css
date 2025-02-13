@@ -37,9 +37,9 @@
   background-size: 90%;
 }
 
-.mario-cards.bowser-castle {
+.mario-cards.bowser-kingdom {
   background-color: #2f4f4f;
-  background-image: url("../assets/card-types/bowser-kingdom.svg");
+  background-image: url("../assets/card-types/bowser-kingdom.webp");
   background-repeat: no-repeat;
   background-position: 80px 180px;
   background-size: 90%;
@@ -124,23 +124,6 @@
   background-position: 80px 180px;
   background-size: 90%;
 }
-
-.mario-cards.fossil-falls {
-  background-color: #66cdaa;
-  background-image: url("../assets/card-types/fossil-falls.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
-}
-
-.mario-cards.jungle-kingdom {
-  background-color: #556b2f;
-  background-image: url("../assets/card-types/jungle-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
-}
-
 
 .inner-element {
   display: flex;
