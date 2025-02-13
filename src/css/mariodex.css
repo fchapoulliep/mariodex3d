@@ -1,16 +1,16 @@
-#narutodex {
+#mariodex {
   display: flex;
   align-items: center;
   width: 100%;
   flex-direction: column;
 }
 
-#narutodex-navbar {
+#mariodex-navbar {
   position: sticky;
   height: 60px;
   top: 0;
   width: 100%;
-  background-color: #f2a30b;
+  background-color: #ee1c25;
   z-index: 1000;
   display: flex;
   flex-direction: row;
@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-#narutodex-container {
+#mariodex-container {
   display: flex;
   position: relative;
   width: 100%;
@@ -30,7 +30,7 @@
   justify-content: center;
 }
 
-.swiper-slide-active .naruto-cards {
+.swiper-slide-active .mario-cards {
   height: 85%;
   max-height: 85%;
   transition: height 0.3s ease-in-out;
@@ -74,7 +74,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  #narutodex-container {
+  #mariodex-container {
     min-height: calc(100vh - 188px);
   }
 }

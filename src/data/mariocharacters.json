@@ -176,7 +176,7 @@
   {
     "name": "Collect Animal",
     "id": 30,
-    "city": ["Various Kingdoms"],
+    "city": ["Mushroom Kingdom"],
     "description": "A small, collectible creature found throughout the kingdoms."
   },
   {
@@ -230,7 +230,7 @@
   {
     "name": "Giant Wander Boss",
     "id": 39,
-    "city": ["Various Kingdoms"],
+    "city": ["Mushroom Kingdom"],
     "description": "A massive, wandering boss that appears in multiple kingdoms."
   },
   {
@@ -278,7 +278,7 @@
   {
     "name": "Hint Toad",
     "id": 47,
-    "city": ["Various Kingdoms"],
+    "city": ["Mushroom Kingdom"],
     "description": "A helpful Toad who provides hints and tips to Mario."
   },
   {
@@ -450,12 +450,6 @@
     "description": "Mario in his doctor outfit, ready to heal and help."
   },
   {
-    "name": "Mario (Dot 3D)",
-    "id": 76,
-    "city": ["Mushroom Kingdom"],
-    "description": "Mario in a retro 3D dot-style outfit, reminiscent of early 3D graphics."
-  },
-  {
     "name": "Mario (Employee)",
     "id": 77,
     "city": ["Metro Kingdom"],
@@ -464,7 +458,7 @@
   {
     "name": "Mario (Explorer)",
     "id": 78,
-    "city": ["Various Kingdoms"],
+    "city": ["Mushroom Kingdom"],
     "description": "Mario in his explorer outfit, ready to discover new lands."
   },
   {
@@ -692,7 +686,7 @@
   {
     "name": "Peach (Explorer)",
     "id": 116,
-    "city": ["Various Kingdoms"],
+    "city": ["Mushroom Kingdom"],
     "description": "Princess Peach in her explorer outfit, ready for adventure."
   },
   {
@@ -915,7 +909,7 @@
     "name": "Bird",
     "id": 153,
     "city": ["Mushroom Kingdom"],
-    "description": "A generic bird found in various kingdoms, often seen flying or perched."
+    "description": "A generic bird found in Mushroom Kingdom, often seen flying or perched."
   },
   {
     "name": "Volbonan (Small)",

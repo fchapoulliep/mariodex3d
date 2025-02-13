@@ -16,20 +16,20 @@ interface SliderProps {
 }
 
 /**
- * Slider component that displays a left or right arrow to navigate between Naruto Character.
- * Uses the URL parameter to determine the current Naruto Character ID.
+ * Slider component that displays a left or right arrow to navigate between Mario Character.
+ * Uses the URL parameter to determine the current Mario Character ID.
  */
 const Slider: React.FC<SliderProps> = ({ direction }) => {
-  const { narutoId } = useParams<{ narutoId: string }>();
-  const [newId, setNewId] = React.useState(narutoId);
+  const { marioId } = useParams<{ marioId: string }>();
+  const [newId, setNewId] = React.useState(marioId);
 
   useEffect(() => {
     if (direction === "left") {
-      setNewId(`${parseInt(narutoId || "0") - 1}`);
+      setNewId(`${parseInt(marioId || "0") - 1}`);
     } else {
-      setNewId(`${parseInt(narutoId || "0") + 1}`);
+      setNewId(`${parseInt(marioId || "0") + 1}`);
     }
-  }, [narutoId]);
+  }, [marioId]);
 
   return (
     <div

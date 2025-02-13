@@ -30,40 +30,148 @@
     opacity: 0;
   }
 }
-
-.eye {
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  background-color: #640606;
-  position: absolute;
-  border: 5px solid #000000;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-}
-.sharingan {
+.board {
+  height: 175px;
+  width: 175px;
   position: relative;
-  animation: loader 2s infinite linear;
-}
-#pupil {
-  fill: black;
-}
-#iris {
-  stroke-width: 8px;
-  stroke: rgba(60, 6, 6, 0.75);
-  fill: rgba(60, 6, 6, 0.9);
-}
-.iris_anomaly {
-  fill: black;
-  font-size: 100px;
-  font-family: "Redressed", cursive;
+  overflow: hidden;
+  background-image: linear-gradient(#fcf988, #ede600, #7d7904);
+
+  -webkit-animation: float 1.5s infinite linear;
+  animation: float 1.5s infinite linear;
 }
 
-@keyframes loader {
+@-webkit-keyframes float {
   0% {
-    transform: rotate(0deg);
+    top: 0;
+  }
+  50% {
+    top: 35px;
   }
   100% {
-    transform: rotate(-360deg);
+    top: 0;
   }
+}
+
+@keyframes float {
+  0% {
+    top: 0;
+  }
+  50% {
+    top: 6px;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.corner {
+  background: #000;
+  position: absolute;
+}
+
+.c-1 {
+  height: 105px;
+  width: 56px;
+  top: -42px;
+  left: 0px;
+  transform: rotate(54deg);
+}
+
+.c-2 {
+  height: 56px;
+  width: 105px;
+  top: -17px;
+  right: -28px;
+  transform: rotate(35deg);
+}
+
+.c-3 {
+  height: 56px;
+  width: 105px;
+  top: 105px;
+  left: -66px;
+  transform: rotate(72deg);
+}
+
+.c-4 {
+  height: 56px;
+  width: 105px;
+  top: 105px;
+  right: -66px;
+  transform: rotate(-72deg);
+}
+
+.c-5 {
+  height: 7px;
+  width: 280px;
+  top: 168px;
+}
+
+.arrow {
+  border-top: 34px solid #000;
+  border-bottom: 70px solid rgba(0, 0, 0, 0);
+  border-left: 70px solid rgba(0, 0, 0, 0);
+  border-right: 70px solid rgba(0, 0, 0, 0);
+  position: absolute;
+  height: 0;
+  width: 0;
+}
+
+.a-1 {
+  transform: rotate(-36deg);
+  top: 18px;
+  left: 1px;
+}
+
+.a-2 {
+  transform: rotate(36deg);
+  top: 18px;
+  right: 1px;
+}
+
+.a-3 {
+  transform: rotate(-108deg);
+  top: 50px;
+  left: -10px;
+}
+
+.a-4 {
+  transform: rotate(108deg);
+  top: 50px;
+  right: -10px;
+}
+
+.a-5 {
+  transform: rotate(180deg);
+  top: 70px;
+  right: 18px;
+}
+
+.eye {
+  position: absolute;
+  height: 33px;
+  border-radius: 45%;
+  width: 11px;
+  background: #000;
+}
+
+.left {
+  top: 69px;
+  left: 68px;
+}
+
+.right {
+  top: 69px;
+  right: 68px;
+}
+
+.iris {
+  position: absolute;
+  height: 18px;
+  border-radius: 45%;
+  width: 7px;
+  background: #fff;
+  top: 2px;
+  left: 2px;
 }

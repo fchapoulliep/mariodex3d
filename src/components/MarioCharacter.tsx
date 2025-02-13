@@ -1,41 +1,46 @@
 /**
- * Importing React, the Loader component, the NarutoType component, and the Link component.
+ * Importing React, the Loader component, the MarioType component, and the Link component.
  */
 import React, { useEffect, useMemo } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Canvas } from "@react-three/fiber";
-import { OrbitControls, useGLTF } from "@react-three/drei";
-import narutoList from "../data/narutocharacters.json";
+import {
+  Bounds,
+  OrbitControls,
+  PerspectiveCamera,
+  useGLTF,
+} from "@react-three/drei";
+import marioList from "../data/mariocharacters.json";
 import Loader from "./Loader";
 import * as THREE from "three";
-import "../css/narutocharacter.css";
-import NarutoType from "./NarutoType";
+import "../css/mariocharacter.css";
+import MarioType from "./MarioType";
 import { Link } from "react-router-dom";
 
 /**
- * Interface for the NarutoProps type, which includes the Character ID.
+ * Interface for the MarioProps type, which includes the Character ID.
  */
-interface NarutoProps {
-  narutoId: string;
+interface MarioProps {
+  marioId: string;
 }
 
 /**
- * Interface for the NarutoModelProps type, which includes the model path and Character ID.
+ * Interface for the MarioModelProps type, which includes the model path and Character ID.
  */
-interface NarutoModelProps {
+interface MarioModelProps {
   modelPath: string;
 }
 
 /**
- * Component that renders a 3D model of a Naruto Character using the provided model path and Character ID.
+ * Component that renders a 3D model of a Mario Character using the provided model path and Character ID.
  * It handles loading the model, playing idle animations, and adjusting the model's scale and materials.
  *
  * @component
- * @param {NarutoModelProps} props - The properties for the NarutoModel component.
+ * @param {MarioModelProps} props - The properties for the MarioModel component.
  * @param {string} props.modelPath - The path to the 3D model file.
- * @returns {JSX.Element} The rendered 3D model of the Naruto Character.
+ * @returns {JSX.Element} The rendered 3D model of the Mario Character.
  */
-const NarutoModel: React.FC<NarutoModelProps> = ({ modelPath }) => {
+const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
   const { scene, animations } = useGLTF(modelPath);
   const mixer = new THREE.AnimationMixer(scene);
 
@@ -63,36 +68,53 @@ const NarutoModel: React.FC<NarutoModelProps> = ({ modelPath }) => {
 
   useEffect(() => {
     if (scene) {
-      const box = new THREE.Box3().setFromObject(scene);
-      const size = new THREE.Vector3();
-      box.getSize(size);
-
-      const delta = Math.min(1.0 / size.x, 1.0 / size.y, 1.0 / size.z);
-      scene.scale.set(delta, delta, delta);
-      scene.rotation.y = -0.5;
+      scene.scale.set(0.2, 0.2, 0.2);
     }
   }, [scene]);
 
-  return <primitive object={scene} scale={0.25} position={[0, -2, 0.5]} />;
+  useEffect(() => {
+    if (scene) {
+      const box = new THREE.Box3().setFromObject(scene);
+      const center = new THREE.Vector3();
+      box.getCenter(center);
+
+      scene.position.y -= center.y;
+    }
+  }, [scene]);
+
+  return (
+    <group>
+      <Bounds fit clip observe margin={1.5}>
+        <primitive object={scene}/>
+        <PerspectiveCamera makeDefault position={[0, 20, 50]} />
+        <OrbitControls
+          maxDistance={80}
+          enableRotate
+          target={[0, 0, 0]}
+          autoRotate
+        />
+      </Bounds>
+    </group>
+  );
 };
 
 /**
- *  Component that renders a Naruto Character page with a 3D model, description, and type information.
- * @param narutoId The ID of the Character to display.
- * @returns The Naruto Character page with the 3D model, description, and type information.
+ *  Component that renders a Mario Character page with a 3D model, description, and type information.
+ * @param marioId The ID of the Character to display.
+ * @returns The Mario Character page with the 3D model, description, and type information.
  */
-const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
-  const narutocharacter = narutoList.find((p) => p.id === parseInt(narutoId));
+const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
+  const mariocharacter = marioList.find((p) => p.id === parseInt(marioId));
   const [loading, setLoading] = React.useState(true);
 
-  const narutocharacterName = narutocharacter ? narutocharacter.name : "";
+  const mariocharacterName = mariocharacter ? mariocharacter.name : "";
 
   const modelPath = useMemo(
     () =>
       `${
         import.meta.env.BASE_URL
-      }models/${narutocharacterName}/${narutocharacterName}.glb?v=${new Date().getTime()}`,
-    [narutocharacterName]
+      }models/${mariocharacterName}/${mariocharacterName}.glb?v=${new Date().getTime()}`,
+    [mariocharacterName]
   );
 
   useEffect(() => {
@@ -103,7 +125,7 @@ const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
     setLoading(false);
   }, [modelPath]);
 
-  if (!narutocharacter) {
+  if (!mariocharacter) {
     return (
       <div
         style={{
@@ -115,8 +137,8 @@ const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
           flexDirection: "column",
         }}
       >
-        The Naruto Character does not exist
-        <Link to="/">Go back to the NarutoDex</Link>
+        The Mario Character does not exist
+        <Link to="/">Go back to the MarioDex</Link>
       </div>
     );
   }
@@ -132,11 +154,11 @@ const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
 
   return (
     <div
-      id="naruto-overlay"
+      id="mario-overlay"
       style={{
         backgroundImage: `url(${
           import.meta.env.BASE_URL
-        }backgrounds/${narutocharacter.village
+        }backgrounds/${mariocharacter.city[0]
           .toLowerCase()
           .replace(/ /g, "-")}.png)`,
         backgroundPosition: "bottom",
@@ -144,13 +166,13 @@ const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
       }}
     >
       <Loader />
-      <div className="naruto-description">
-        <h2>{narutocharacter.name}</h2>
-        <p>{narutocharacter.description}</p>
+      <div className="mario-description">
+        <h2>{mariocharacter.name}</h2>
+        <p>{mariocharacter.description}</p>
       </div>
-      <div className="naruto-types">
-        {narutocharacter.clan.map((clanItem) => (
-          <NarutoType key={clanItem} type={clanItem} />
+      <div className="mario-types">
+        {mariocharacter.city.map((cityItem) => (
+          <MarioType key={cityItem} type={cityItem} />
         ))}
       </div>
 
@@ -158,16 +180,10 @@ const NarutoCharacter: React.FC<NarutoProps> = ({ narutoId }) => {
         <ambientLight intensity={1} />
         <directionalLight position={[-5, 5, 5]} intensity={2} castShadow />
         <directionalLight position={[5, 5, -5]} intensity={2} castShadow />
-        <OrbitControls
-          enableDamping
-          dampingFactor={0.25}
-          minDistance={2}
-          maxDistance={6}
-        />
-        <NarutoModel modelPath={modelPath} />
+        <MarioModel modelPath={modelPath} />
       </Canvas>
     </div>
   );
 };
 
-export default NarutoCharacter;
+export default MarioCharacter;

@@ -9,49 +9,49 @@ SwiperCore.use([Keyboard, Navigation]);
 import "swiper/swiper-bundle.css";
 
 /* Importing the CSS file */
-import "../css/narutodex.css";
+import "../css/mariodex.css";
 
-/* Importing the list of Naruto Character */
-import narutoCharacterList from "../data/narutocharacters.json";
+/* Importing the list of Mario Character */
+import marioCharacterList from "../data/mariocharacters.json";
 
 /* Importing the Footer component */
 import Footer from "./Footer";
-import NarutoCard from "./NarutoCard";
+import MarioCard from "./MarioCard";
 
-import narutoLogo from "../assets/logo/narutoLogo.png";
+import marioLogo from "../assets/logo/marioLogo.png";
 
 /**
- * NarutoDex component that displays a list of Naruto Characters as links.
- * Each Naruto Character name is converted to lowercase and used as the URL path.
+ * MarioDex component that displays a list of Mario Characters as links.
+ * Each Mario Character name is converted to lowercase and used as the URL path.
  *
  * @component
  * @example
  * return (
- *   <NarutoDex />
+ *   <MarioDex />
  * )
  */
-const NarutoDex: React.FC = () => {
-  const [narutoCharacterToShow, setNarutoCharacterToShow] =
-    React.useState(narutoCharacterList);
+const MarioDex: React.FC = () => {
+  const [marioCharacterToShow, setMarioCharacterToShow] =
+    React.useState(marioCharacterList);
   const [searchQuery, setSearchQuery] = React.useState("");
   const [selectedType, setSelectedType] = React.useState("");
 
   /**
-   * handleInput function that filters the Naruto Characters list based on the search query.
+   * handleInput function that filters the Mario Characters list based on the search query.
    */
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     const query = event.target.value.toLowerCase();
     setSearchQuery(query);
-    filterNarutoCharacter(query, selectedType);
+    filterMarioCharacter(query, selectedType);
   };
 
   /**
-   * handleTypeChange function that filters the Naruto Characters list based on the selected type.
+   * handleTypeChange function that filters the Mario Characters list based on the selected type.
    */
   const handleTypeChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     const type = event.target.value;
     setSelectedType(type);
-    filterNarutoCharacter(searchQuery, type);
+    filterMarioCharacter(searchQuery, type);
   };
 
   /**
@@ -70,52 +70,46 @@ const NarutoDex: React.FC = () => {
       .toLowerCase();
 
   /**
-   * filterNarutoCharacter function that filters the Naruto Characters list based on the search query and type.
+   * filterMarioCharacter function that filters the Mario Characters list based on the search query and type.
    * @param query the search query
    * @param type the selected type
    */
-  const filterNarutoCharacter = (query: string, type: string) => {
-    const filterednarutoCharacter = narutoCharacterList.filter(
-      (narutoCharacter) => {
+  const filterMarioCharacter = (query: string, type: string) => {
+    const filteredmarioCharacter = marioCharacterList.filter(
+      (marioCharacter) => {
         const matchesName =
-          normalizeText(narutoCharacter.name).startsWith(
-            normalizeText(query)
-          ) ||
-          normalizeText(narutoCharacter.name).includes(normalizeText(query));
+          normalizeText(marioCharacter.name).startsWith(normalizeText(query)) ||
+          normalizeText(marioCharacter.name).includes(normalizeText(query));
         const matchesType =
-          type === "" ? true : narutoCharacter.village === type;
+          type === "" ? true : marioCharacter.city.includes(type);
         return matchesName && matchesType;
       }
     );
-    setNarutoCharacterToShow(filterednarutoCharacter);
+    setMarioCharacterToShow(filteredmarioCharacter);
   };
 
   return (
-    <div id="narutodex">
-      <div id="narutodex-navbar">
+    <div id="mariodex">
+      <div id="mariodex-navbar">
         <a
           href={`${import.meta.env.BASE_URL}`}
           style={{ height: "100%", display: "flex", alignItems: "center" }}
         >
-          <img
-            src={narutoLogo}
-            alt="Naruto Logo"
-            style={{ width: "120px" }}
-          />
+          <img src={marioLogo} alt="Mario Logo" style={{ width: "100px" }} />
         </a>
         <search id="search-bar">
           <input
-            name="narutocharacter-name"
+            name="mariocharacter-name"
             type="text"
             placeholder="Search Character"
             onInput={handleInput}
           />
-          <select name="narutocharacter-type" onChange={handleTypeChange}>
-            <option value="">All Villages</option>
+          <select name="mariocharacter-type" onChange={handleTypeChange}>
+            <option value="">All Kingdoms</option>
             {Array.from(
               new Set(
-                narutoCharacterList.flatMap(
-                  (narutocharacter) => narutocharacter.village
+                marioCharacterList.flatMap(
+                  (marioCharacter) => marioCharacter.city
                 )
               )
             ).map((type, index) => (
@@ -126,7 +120,7 @@ const NarutoDex: React.FC = () => {
           </select>
         </search>
       </div>
-      <div id="narutodex-container">
+      <div id="mariodex-container">
         <Swiper
           spaceBetween={30}
           slidesPerView="auto"
@@ -137,7 +131,7 @@ const NarutoDex: React.FC = () => {
           keyboard
           cssMode
         >
-          {narutoCharacterToShow.map((narutoCharacter, index) => (
+          {marioCharacterToShow.map((marioCharacter, index) => (
             <SwiperSlide
               style={{
                 width: "300px",
@@ -149,12 +143,11 @@ const NarutoDex: React.FC = () => {
               }}
               key={index}
             >
-              <NarutoCard
+              <MarioCard
                 key={index}
-                name={narutoCharacter.name}
-                id={narutoCharacter.id}
-                clan={narutoCharacter.clan}
-                village={narutoCharacter.village}
+                name={marioCharacter.name}
+                id={marioCharacter.id}
+                city={marioCharacter.city}
               />
             </SwiperSlide>
           ))}
@@ -165,4 +158,4 @@ const NarutoDex: React.FC = () => {
   );
 };
 
-export default NarutoDex;
+export default MarioDex;

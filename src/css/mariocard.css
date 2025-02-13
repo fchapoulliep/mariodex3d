@@ -1,0 +1,200 @@
+.mario-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 100%;
+  color: white;
+  border-radius: 20px;
+  transform-style: preserve-3d;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transition: height 0.3s ease-in-out;
+  max-height: 550px;
+}
+
+.mario-cards.mushroom-kingdom {
+  background-color: #b22222;
+  background-image: url("../assets/card-types/konohagakure.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.wooded-kingdom {
+  background-color: #6b8e23;
+  background-image: url("../assets/card-types/wood-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.cloud-kingdom {
+  background-color: #87ceeb;
+  background-image: url("../assets/card-types/cloud-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.bowser-castle {
+  background-color: #2f4f4f;
+  background-image: url("../assets/card-types/bowser-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.lake-kingdom {
+  background-color: #4682b4;
+  background-image: url("../assets/card-types/lake-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.seaside-kingdom {
+  background-color: #5f9ea0;
+  background-image: url("../assets/card-types/seaside-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.luncheon-kingdom {
+  background-color: #cd5c5c;
+  background-image: url("../assets/card-types/luncheon-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.sand-kingdom {
+  background-color: #d2b48c;
+  background-image: url("../assets/card-types/sand-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.snow-kingdom {
+  background-color: #dcdcdc;
+  background-image: url("../assets/card-types/snow-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.cascade-kingdom {
+  background-color: #66cdaa;
+  background-image: url("../assets/card-types/cascade-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.cap-kingdom {
+  background-color: #778899;
+  background-image: url("../assets/card-types/cap-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.moon-kingdom {
+  background-color: #eee8aa;
+  background-image: url("../assets/card-types/moon-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.ruined-kingdom {
+  background-color: #808080;
+  background-image: url("../assets/card-types/ruined-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.metro-kingdom {
+  background-color: #ff6347;
+  background-image: url("../assets/card-types/metro-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.fossil-falls {
+  background-color: #66cdaa;
+  background-image: url("../assets/card-types/fossil-falls.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+.mario-cards.jungle-kingdom {
+  background-color: #556b2f;
+  background-image: url("../assets/card-types/jungle-kingdom.svg");
+  background-repeat: no-repeat;
+  background-position: 80px 180px;
+  background-size: 90%;
+}
+
+
+.inner-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  transform: translateZ(60px);
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.inner-element a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.inner-element a p {
+  margin: 0;
+}
+
+.inner-element .mario-types {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  font-size: 10px;
+  width: 100%;
+}
+
+.inner-element .mario-types img {
+  width: 20px;
+  height: 20px;
+}
+
+.inner-element img.mario-character-image {
+  width: 70%;
+  height: 65%;
+  object-fit: cover;
+}
+
+@media screen and (max-height: 600px) {
+  .inner-element img.mario-character-image {
+    width: 30%;
+    height: 45%;
+    object-fit: cover;
+  }
+}

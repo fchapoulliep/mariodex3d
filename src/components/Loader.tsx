@@ -19,31 +19,26 @@ import "../css/loader.css";
 const Loader: React.FC = () => {
   return (
     <div className="loader">
-      <div className="eye">
-        <svg className="sharingan" viewBox="0 0 100 100">
-          <g id="full_pupil">
-            <circle id="iris" r="30" cx="50%" cy="50%"></circle>
-            <circle id="pupil" r="10" cx="50%" cy="50%"></circle>
+      <div className="board">
+        <div className="corner c-1"></div>
+        <div className="corner c-2"></div>
+        <div className="corner c-3"></div>
+        <div className="corner c-4"></div>
+        <div className="corner c-5"></div>
 
-            <text
-              id="iris_anomaly"
-              className="iris_anomaly"
-              transform="rotate(180 30,8)"
-            >
-              ,
-            </text>
-            <use
-              href="#iris_anomaly"
-              transform="rotate(120 50,50)"
-              fill="black"
-            ></use>
-            <use
-              href="#iris_anomaly"
-              transform="rotate(240 50,50)"
-              fill="black"
-            ></use>
-          </g>
-        </svg>
+        <div className="arrow a-1"></div>
+        <div className="arrow a-2"></div>
+        <div className="arrow a-3"></div>
+        <div className="arrow a-4"></div>
+        <div className="arrow a-5"></div>
+
+        <div className="eye left">
+          <div className="iris"></div>
+        </div>
+
+        <div className="eye right">
+          <div className="iris"></div>
+        </div>
       </div>
     </div>
   );

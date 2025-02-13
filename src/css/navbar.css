@@ -14,7 +14,7 @@
   background-size: cover;
 }
 
-#navbar .navbar-naruto {
+#navbar .navbar-mario {
   width: 70%;
   height: 80%;
   display: flex;
@@ -22,20 +22,20 @@
   transition: 200ms all;
 }
 
-#navbar .navbar-naruto div {
+#navbar .navbar-mario div {
   width: 33.333%;
   display: flex;
 }
 
-#navbar .navbar-naruto div:nth-child(1) {
+#navbar .navbar-mario div:nth-child(1) {
   justify-content: flex-end;
 }
 
-#navbar .navbar-naruto div:nth-child(2) {
+#navbar .navbar-mario div:nth-child(2) {
   justify-content: center;
 }
 
-#navbar .navbar-naruto div:nth-child(3) {
+#navbar .navbar-mario div:nth-child(3) {
   justify-content: flex-start;
 }
 
@@ -47,13 +47,13 @@
 }
 
 @media screen and (max-width: 850px) {
-  #navbar .navbar-naruto {
+  #navbar .navbar-mario {
     width: 95%;
     justify-content: center;
     gap: 15px;
   }
 
-  #navbar .navbar-naruto div {
+  #navbar .navbar-mario div {
     width: auto;
   }
 

@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Yatra One";
-  src: url("../assets/fonts/YatraOne-Regular.ttf") format("truetype");
+  font-family: "Super Mario";
+  src: url("../assets/fonts/MarioFont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 * {
-  font-family: "Yatra One", sans-serif;
+  font-family: "Super Mario", sans-serif;
 }
 
 body,

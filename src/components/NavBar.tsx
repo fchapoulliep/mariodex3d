@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import "../css/navbar.css";
 
 /**
- * NavBar component renders the navigation bar for the NarutoDex 3D application.
+ * NavBar component renders the navigation bar for the MarioDex 3D application.
  * It includes links to the Home, About, and Contact pages.
  *
  * @component
@@ -28,9 +28,9 @@ const NavBar: React.FC = () => {
 
   return (
     <nav id="navbar">
-      <div className="navbar-naruto">
+      <div className="navbar-mario">
         <div className="navbar-link">
-          <Link to="/">Back to the NarutoDex</Link>
+          <Link to="/">Back to the MarioDex</Link>
         </div>
         <div className="navbar-time">{time}</div>
         <div className="navbar-link">

@@ -1,4 +1,4 @@
-#naruto-overlay {
+#mario-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-#naruto-overlay .naruto-description {
+#mario-overlay .mario-description {
   position: absolute;
   left: 0%;
   bottom: 5%;
@@ -37,16 +37,16 @@
   background-size: 200%;
 }
 
-#naruto-overlay .naruto-description h2 {
+#mario-overlay .mario-description h2 {
   margin: 5px 0;
   font-weight: bold;
 }
 
-#naruto-overlay .naruto-description p {
+#mario-overlay .mario-description p {
   margin: 5px 0;
 }
 
-#naruto-overlay .naruto-types {
+#mario-overlay .mario-types {
   position: absolute;
   right: 0%;
   bottom: 5%;
@@ -69,20 +69,20 @@
 }
 
 @media (max-width: 850px) {
-  #naruto-overlay p {
+  #mario-overlay p {
     font-size: 11px;
   }
 
-  #naruto-overlay h2 {
+  #mario-overlay h2 {
     font-size: 16px;
   }
 
-  #naruto-overlay .naruto-types img {
+  #mario-overlay .mario-types img {
     width: 16px;
     height: 16px;
   }
 
-  #naruto-overlay .naruto-types .type-div:first-child p {
+  #mario-overlay .mario-types .type-div:first-child p {
     margin-right: 5px;
   }
 }
