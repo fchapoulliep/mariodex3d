@@ -176,7 +176,7 @@
   {
     "name": "Collect Animal",
     "id": 30,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
+    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
     "description": "A small, collectible creature found throughout the kingdoms, often seen in the Mushroom Kingdom but also in the Wooded Kingdom."
   },
   {

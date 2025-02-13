@@ -48,7 +48,7 @@ const MarioCard: React.FC<MarioCardProps> = (mariocharacter) => {
             className="mario-character-image"
             src={`${import.meta.env.BASE_URL}/sprites/${
               mariocharacter.name
-            }.png`}
+            }.webp`}
             alt={mariocharacter.name}
           />
         </Link>

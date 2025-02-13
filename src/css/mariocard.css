@@ -13,116 +13,80 @@
   max-height: 550px;
 }
 
-.mario-cards.mushroom-kingdom {
-  background-color: #b22222;
-  background-image: url("../assets/card-types/konohagakure.svg");
+.mario-cards {
   background-repeat: no-repeat;
   background-position: 80px 180px;
   background-size: 90%;
+}
+
+.mario-cards.mushroom-kingdom {
+  background-color: #d93a2b; /* Vibrant Red */
+  background-image: url("../assets/card-types/mushroom-kingdom.svg");
 }
 
 .mario-cards.wooded-kingdom {
-  background-color: #6b8e23;
+  background-color: #3e7d2a; /* Deep Forest Green */
   background-image: url("../assets/card-types/wood-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.cloud-kingdom {
-  background-color: #87ceeb;
+  background-color: #c7e3f2; /* Soft Sky Blue */
   background-image: url("../assets/card-types/cloud-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.bowser-kingdom {
-  background-color: #2f4f4f;
+  background-color: #4a2f2f; /* Dark Charcoal with a Hint of Red */
   background-image: url("../assets/card-types/bowser-kingdom.webp");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.lake-kingdom {
-  background-color: #4682b4;
+  background-color: #6aa7e6; /* Clear Water Blue */
   background-image: url("../assets/card-types/lake-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.seaside-kingdom {
-  background-color: #5f9ea0;
+  background-color: #55c2a5; /* Tropical Ocean Teal */
   background-image: url("../assets/card-types/seaside-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.luncheon-kingdom {
-  background-color: #cd5c5c;
+  background-color: #ff7675; /* Bright Pinkish-Red (Food Inspired) */
   background-image: url("../assets/card-types/luncheon-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.sand-kingdom {
-  background-color: #d2b48c;
+  background-color: #e0c38c; /* Warm Desert Sand */
   background-image: url("../assets/card-types/sand-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.snow-kingdom {
-  background-color: #dcdcdc;
+  background-color: #dfdede; /* Pure Snow White */
   background-image: url("../assets/card-types/snow-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.cascade-kingdom {
-  background-color: #66cdaa;
+  background-color: #5dc9a2; /* Lush Waterfall Green */
   background-image: url("../assets/card-types/cascade-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.cap-kingdom {
-  background-color: #778899;
+  background-color: #5c5c76; /* Dark Blue-Grey (Hat Theme) */
   background-image: url("../assets/card-types/cap-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.moon-kingdom {
-  background-color: #eee8aa;
+  background-color: #f8e6a0; /* Pale Moon Yellow */
   background-image: url("../assets/card-types/moon-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.ruined-kingdom {
-  background-color: #808080;
+  background-color: #656565; /* Dark Stone Grey */
   background-image: url("../assets/card-types/ruined-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .mario-cards.metro-kingdom {
-  background-color: #ff6347;
+  background-color: #e03e36; /* Classic Red to Match New Donk City */
   background-image: url("../assets/card-types/metro-kingdom.svg");
-  background-repeat: no-repeat;
-  background-position: 80px 180px;
-  background-size: 90%;
 }
 
 .inner-element {
@@ -176,7 +140,7 @@
 
 @media screen and (max-height: 600px) {
   .inner-element img.mario-character-image {
-    width: 30%;
+    width: 45%;
     height: 45%;
     object-fit: cover;
   }
