@@ -37,7 +37,6 @@
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(#fcf988, #ede600, #7d7904);
-
   -webkit-animation: float 1.5s infinite linear;
   animation: float 1s infinite linear;
 }
