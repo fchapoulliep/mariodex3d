@@ -1,926 +1,926 @@
 [
   {
-    "name": "Mario (8-Bit)",
+    "name": "Mario (Classic)",
     "id": 1,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "The classic 8-bit version of Mario, the iconic hero of the Mushroom Kingdom, also appearing in the Cap Kingdom for nostalgic adventures."
+    "city": ["Mushroom Kingdom"],
+    "description": "The energetic and courageous hero of the Mushroom Kingdom, always ready for adventure, jumping, and saving Princess Peach."
+  },
+  {
+    "name": "Mario (8-Bit)",
+    "id": 2,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario in his classic 8-bit form, a retro reminder of his early adventures on the NES."
   },
   {
     "name": "Mario (64)",
-    "id": 2,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "The polygonal version of Mario from the classic Nintendo 64 era, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 3,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario's appearance in Super Mario 64, marking his transition to 3D gaming and open-world exploration."
   },
   {
     "name": "Mario (Aviator)",
-    "id": 3,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "Mario dressed in an aviator outfit, ready to take to the skies, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 4,
+    "city": ["Lost Kingdom"],
+    "description": "Mario dressed as an aviator, prepared to take to the skies in his vintage flying gear."
   },
   {
     "name": "Mario (Baseball)",
-    "id": 4,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his baseball uniform, ready to hit a home run, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 5,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario sporting a baseball uniform, ready to knock it out of the park with his sporty attire."
   },
   {
     "name": "Mario (Black Suit)",
-    "id": 5,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a sleek black suit, perfect for formal occasions, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 6,
+    "city": ["Metro Kingdom"],
+    "description": "Mario in a stylish black suit, suited for formal occasions or undercover missions."
   },
   {
     "name": "Mario (Black Tuxedo)",
-    "id": 6,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a stylish black tuxedo, ready for a night out, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 7,
+    "city": ["Cap Kingdom"],
+    "description": "A dapper look for Mario in a formal black tuxedo, perfect for fancy events."
   },
   {
     "name": "Mario (Bowser)",
-    "id": 7,
-    "city": ["Bowser's Kingdom", "Mushroom Kingdom"],
-    "description": "Mario wearing a Bowser-themed costume, blending in with his enemies, primarily found in Bowser's Kingdom but also in the Mushroom Kingdom."
+    "id": 8,
+    "city": ["Bowser's Kingdom"],
+    "description": "Mario disguised as his arch-rival Bowser, a comical and unexpected transformation."
   },
   {
     "name": "Mario (Boxers)",
-    "id": 8,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario in his casual boxer shorts, relaxing at home, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 9,
+    "city": ["Cap Kingdom", "Cascade Kingdom"],
+    "description": "A casual look for Mario, wearing only his boxer shorts, ready for a relaxing day or a quick nap."
   },
   {
     "name": "Mario (Builder)",
-    "id": 9,
-    "city": ["Cascade Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his builder outfit, ready to construct and repair, primarily found in the Cascade Kingdom but also in the Mushroom Kingdom."
+    "id": 10,
+    "city": ["Metro Kingdom"],
+    "description": "Mario dressed as a construction worker, ready to build and create in any kingdom."
   },
   {
     "name": "Mario (Caveman)",
-    "id": 10,
-    "city": ["Cascade Kingdom", "Ruined Kingdom"],
-    "description": "Mario dressed as a caveman, exploring prehistoric areas, primarily found in the Cascade Kingdom but also in the Ruined Kingdom."
+    "id": 11,
+    "city": ["Cascade Kingdom"],
+    "description": "Mario in a primitive caveman outfit, embracing his prehistoric side."
   },
   {
     "name": "Mario (Chef)",
-    "id": 11,
-    "city": ["Luncheon Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his chef outfit, cooking up delicious meals, primarily found in the Luncheon Kingdom but also in the Mushroom Kingdom."
+    "id": 12,
+    "city": ["Luncheon Kingdom"],
+    "description": "Mario donning a chef's hat and apron, cooking up culinary delights in the Luncheon Kingdom."
   },
   {
-    "name": "Mario (Classic)",
-    "id": 12,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario in his classic red and blue outfit, as seen in early games, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "name": "Mario (Captain)",
+    "id": 13,
+    "city": ["Cascade Kingdom"],
+    "description": "Mario in a captain's uniform, ready to set sail on the high seas and navigate treacherous waters."
   },
   {
     "name": "Mario (Clown)",
-    "id": 13,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "Mario dressed as a clown, bringing joy and laughter, primarily found in the Cap Kingdom but also in the Mushroom Kingdom."
+    "id": 14,
+    "city": ["Luncheon Kingdom"],
+    "description": "Mario all dressed up as a clown, ready to entertain and bring joy to others."
   },
   {
     "name": "Mario (Cowboy)",
-    "id": 14,
-    "city": ["Sand Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a cowboy outfit, exploring the Wild West-inspired desert, primarily found in the Sand Kingdom but also in the Mushroom Kingdom."
+    "id": 15,
+    "city": ["Sand Kingdom"],
+    "description": "Mario as a rootin' tootin' cowboy, ready to wrangle up stars in the Wild West."
   },
   {
     "name": "Mario (Diddy Kong)",
-    "id": 15,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "Mario wearing a Diddy Kong-themed costume, blending in with the jungle, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 16,
+    "city": ["Cascade Kingdom"],
+    "description": "Mario mimicking his friend Diddy Kong, sporting his signature red cap."
   },
   {
     "name": "Mario (Doctor)",
-    "id": 16,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his doctor outfit, ready to heal and help, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 17,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario wearing a doctor's coat, ready to heal and assist those in need."
   },
   {
     "name": "Mario (Employee)",
-    "id": 17,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a business suit, working in the bustling city, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 18,
+    "city": ["Metro Kingdom"],
+    "description": "Mario as a helpful store employee, assisting customers with a smile."
   },
   {
     "name": "Mario (Explorer)",
-    "id": 18,
-    "city": ["Mushroom Kingdom", "Cascade Kingdom"],
-    "description": "Mario in his explorer outfit, ready to discover new lands, primarily found in the Mushroom Kingdom but also in the Cascade Kingdom."
+    "id": 19,
+    "city": ["Wooded Kingdom"],
+    "description": "Mario equipped for exploration, seeking out new lands and hidden treasures."
   },
   {
     "name": "Mario (Fashionable)",
-    "id": 19,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a trendy outfit, showcasing his sense of style, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 20,
+    "city": ["Lake Kingdom"],
+    "description": "Mario in stylish modern clothes, fitting for a city adventure in the Metro Kingdom."
   },
   {
     "name": "Mario (Football)",
-    "id": 20,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his football uniform, ready to score a touchdown, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 21,
+    "city": ["Moon Kingdom"],
+    "description": "Mario geared up for a game of football (soccer), showing off his athletic skills."
   },
   {
     "name": "Mario (Gold)",
-    "id": 21,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario in a golden outfit, symbolizing his legendary status, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 22,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario entirely covered in gleaming gold, a symbol of his achievements."
   },
   {
     "name": "Mario (Golf)",
-    "id": 22,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his golf attire, ready to hit the links, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 23,
+    "city": ["Metro Kingdom"],
+    "description": "Mario ready to tee off on the green, showcasing his golfing prowess."
   },
   {
     "name": "Mario (Hakama)",
-    "id": 23,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in traditional Japanese hakama, embracing cultural attire, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 24,
+    "city": ["Bowser's Kingdom"],
+    "description": "Mario in traditional Hakama, a formal Japanese garment worn in Bowser's Kingdom."
   },
   {
     "name": "Mario (Happi)",
-    "id": 24,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in a colorful happi coat, celebrating festivals, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 25,
+    "city": ["Bowser's Kingdom"],
+    "description": "Mario wearing a festive Happi coat, celebrating a festival in Bowser's Kingdom."
   },
   {
     "name": "Mario (High Poly)",
-    "id": 25,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in a high-polygon model, showcasing modern graphics, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 26,
+    "city": ["Mushroom Kingdom"],
+    "description": "A more detailed, higher polygon model of Mario, showcasing enhanced graphics."
   },
   {
     "name": "Mario (King)",
-    "id": 26,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario dressed as a king, ruling over his kingdom, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 27,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario dressed in regal attire as a king, ruling over his kingdom."
   },
   {
     "name": "Mario (Knight)",
-    "id": 27,
-    "city": ["Ruined Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a knight's armor, ready for battle, primarily found in the Ruined Kingdom but also in the Mushroom Kingdom."
+    "id": 28,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario clad in shining knight's armor, a symbol of bravery and chivalry."
   },
   {
     "name": "Mario (Luigi)",
-    "id": 28,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario wearing a Luigi-themed costume, honoring his brother, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 29,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario disguised as his brother Luigi, a comical and affectionate impersonation."
   },
   {
     "name": "Mario (Mechanic)",
-    "id": 29,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his mechanic outfit, fixing machines and vehicles, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 30,
+    "city": ["Wooded Kingdom"],
+    "description": "Mario as a skilled mechanic, fixing vehicles and machinery."
   },
   {
     "name": "Mario (Musician)",
-    "id": 30,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his musician outfit, playing tunes for everyone, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 31,
+    "city": ["Metro Kingdom"],
+    "description": "Mario as a talented musician, playing instruments and composing melodies."
   },
   {
     "name": "Mario (Painter)",
-    "id": 31,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his painter outfit, creating beautiful artworks, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 32,
+    "city": ["Luncheon Kingdom"],
+    "description": "Mario as a creative painter, expressing himself through colorful artwork."
   },
   {
     "name": "Mario (Peach)",
-    "id": 32,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario wearing a Peach-themed costume, blending in with royalty, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 33,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario disguised as Princess Peach, a humorous and unexpected transformation."
   },
   {
     "name": "Mario (Pirate)",
-    "id": 33,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a pirate outfit, sailing the high seas, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 34,
+    "city": ["Seaside Kingdom"],
+    "description": "Mario as a swashbuckling pirate, searching for buried treasure on the high seas."
   },
   {
     "name": "Mario (Poncho)",
-    "id": 34,
-    "city": ["Sand Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a poncho, staying cool in the desert heat, primarily found in the Sand Kingdom but also in the Mushroom Kingdom."
+    "id": 35,
+    "city": ["Sand Kingdom"],
+    "description": "Mario wearing a traditional poncho, blending in with the locals of the Sand Kingdom."
   },
   {
     "name": "Mario (Resort)",
-    "id": 35,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his resort outfit, enjoying a tropical vacation, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 36,
+    "city": ["Seaside Kingdom"],
+    "description": "Mario dressed for a relaxing stay at a tropical resort in the Seaside Kingdom."
   },
   {
     "name": "Mario (Sailor)",
-    "id": 36,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a sailor outfit, navigating the oceans, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 37,
+    "city": ["Seaside Kingdom"],
+    "description": "Mario in a classic sailor's outfit, ready to set sail on the ocean in the Seaside Kingdom."
   },
   {
     "name": "Mario (Samurai)",
-    "id": 37,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in a samurai outfit, embracing ancient warrior traditions, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 38,
+    "city": ["Bowser's Kingdom"],
+    "description": "Mario as a valiant samurai warrior, clad in traditional armor in Bowser's Kingdom."
   },
   {
     "name": "Mario (Satellaview)",
-    "id": 38,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in a retro outfit inspired by the Satellaview era, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 39,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario's appearance as seen on the Satellaview, a nostalgic trip back in time."
   },
   {
     "name": "Mario (Scientist)",
-    "id": 39,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario in his scientist outfit, conducting experiments, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 40,
+    "city": ["Wooded Kingdom"],
+    "description": "Mario as a brilliant scientist, conducting experiments and making discoveries."
   },
   {
     "name": "Mario (Skeleton)",
-    "id": 40,
-    "city": ["Ruined Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a spooky skeleton costume, perfect for Halloween, primarily found in the Ruined Kingdom but also in the Mushroom Kingdom."
+    "id": 41,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario dressed up as a spooky skeleton, ready for a Halloween adventure."
   },
   {
     "name": "Mario (Snow)",
-    "id": 41,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his snow outfit, staying warm in the icy tundra, primarily found in the Snow Kingdom but also in the Mushroom Kingdom."
+    "id": 42,
+    "city": ["Snow Kingdom"],
+    "description": "Mario bundled up in warm winter clothes, enjoying the snowy landscapes of the Snow Kingdom."
   },
   {
     "name": "Mario (Space)",
-    "id": 42,
-    "city": ["Moon Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a space suit, exploring the cosmos, primarily found in the Moon Kingdom but also in the Mushroom Kingdom."
+    "id": 43,
+    "city": ["Moon Kingdom"],
+    "description": "Mario in a spacesuit, ready for interstellar exploration and zero-gravity fun."
   },
   {
     "name": "Mario (Sunshine)",
-    "id": 43,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his tropical outfit, inspired by his adventures in Isle Delfino, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 44,
+    "city": ["Metro Kingdom"],
+    "description": "Mario as he appeared in Super Mario Sunshine, equipped with the F.L.U.D.D. water cannon."
   },
   {
     "name": "Mario (Swimwear)",
-    "id": 44,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in his swimwear, ready for a day at the beach, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 45,
+    "city": ["Lake Kingdom"],
+    "description": "Mario ready for a swim in his stylish swimwear, enjoying the beaches of the Lake Kingdom."
   },
   {
     "name": "Mario (Topper)",
-    "id": 45,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "Mario wearing a fancy top hat, blending in with the Cap Kingdom's residents, primarily found in the Cap Kingdom but also in the Mushroom Kingdom."
+    "id": 46,
+    "city": ["Cap Kingdom"],
+    "description": "Mario imitating the Broodal, Topper, known for his green hat and mischievous antics."
   },
   {
     "name": "Mario (Tuxedo)",
-    "id": 46,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Mario in a classic tuxedo, perfect for formal events, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 47,
+    "city": ["Moon Kingdom"],
+    "description": "Mario dressed in a classy white tuxedo, perfect for a moonlit occasion in the Moon Kingdom."
   },
   {
     "name": "Mario (Waluigi)",
-    "id": 47,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario wearing a Waluigi-themed costume, embracing his mischievous side, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 48,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario impersonating Waluigi, known for his lanky appearance and scheming personality."
   },
   {
     "name": "Mario (Wario)",
-    "id": 48,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Mario wearing a Wario-themed costume, channeling his greedy alter ego, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 49,
+    "city": ["Mushroom Kingdom"],
+    "description": "Mario mimicking Wario, the greedy and muscular rival, complete with a mustache."
   },
   {
     "name": "Luigi",
-    "id": 49,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario's taller, younger brother and a hero in his own right, often seen in the Mushroom Kingdom but also assisting in the Cap Kingdom."
+    "id": 50,
+    "city": ["Metro Kingdom"],
+    "description": "Mario's often timid but brave younger brother, known for his green attire and ghost-hunting skills."
   },
   {
     "name": "Peach",
-    "id": 50,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Princess Peach, the beloved ruler of the Mushroom Kingdom, also seen in the Cap Kingdom."
+    "id": 51,
+    "city": ["Cap Kingdom"],
+    "description": "The kind-hearted princess of the Mushroom Kingdom, often kidnapped by Bowser but always resilient."
   },
   {
     "name": "Peach (Explorer)",
-    "id": 51,
-    "city": ["Mushroom Kingdom", "Cascade Kingdom"],
-    "description": "Princess Peach in her explorer outfit, ready for adventure, primarily found in the Mushroom Kingdom but also in the Cascade Kingdom."
+    "id": 52,
+    "city": ["Lost Kingdom"],
+    "description": "Peach ready for adventure, dressed in practical explorer gear to uncover hidden secrets."
   },
   {
     "name": "Peach (Farmer)",
-    "id": 52,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
-    "description": "Princess Peach in her farmer outfit, tending to crops, primarily found in the Mushroom Kingdom but also in the Wooded Kingdom."
+    "id": 53,
+    "city": ["Mushroom Kingdom"],
+    "description": "Peach in her farming clothes, tending to the fields of the Mushroom Kingdom with care."
   },
   {
     "name": "Peach (Summer)",
-    "id": 53,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Princess Peach in her summer outfit, enjoying the sunny weather, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 54,
+    "city": ["Seaside Kingdom"],
+    "description": "Peach in a breezy summer dress, enjoying the warm sunshine and vibrant colors of summer."
   },
   {
     "name": "Peach (Swimwear)",
-    "id": 54,
-    "city": ["Seaside Kingdom", "Mushroom Kingdom"],
-    "description": "Princess Peach in her swimwear, relaxing by the beach, primarily found in the Seaside Kingdom but also in the Mushroom Kingdom."
+    "id": 55,
+    "city": ["Seaside Kingdom"],
+    "description": "Peach ready to take a dip, wearing a stylish swimsuit in the sunny Seaside Kingdom."
   },
   {
     "name": "Peach (Wedding)",
-    "id": 55,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Princess Peach in her wedding dress, ready for a royal ceremony, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 56,
+    "city": ["Moon Kingdom"],
+    "description": "Peach in her beautiful wedding gown, though the ceremony was interrupted, she remains hopeful."
   },
   {
     "name": "Peach (Winter)",
-    "id": 56,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "Princess Peach in her winter outfit, staying warm in the snow, primarily found in the Snow Kingdom but also in the Mushroom Kingdom."
+    "id": 57,
+    "city": ["Snow Kingdom"],
+    "description": "Peach bundled up for the cold, enjoying the winter wonderland of the Snow Kingdom."
   },
   {
     "name": "Peach (Yukata)",
-    "id": 57,
-    "city": ["Mushroom Kingdom", "Metro Kingdom"],
-    "description": "Princess Peach in a traditional yukata, celebrating cultural festivals, primarily found in the Mushroom Kingdom but also in the Metro Kingdom."
+    "id": 58,
+    "city": ["Bowser's Kingdom"],
+    "description": "Peach in a traditional yukata, possibly attending a festival or event in Bowser's Kingdom."
   },
   {
     "name": "Bowser",
-    "id": 58,
-    "city": ["Bowser's Kingdom", "Mushroom Kingdom"],
-    "description": "The King of the Koopas and Mario's arch-nemesis, often seen in his kingdom but also invading the Mushroom Kingdom."
+    "id": 59,
+    "city": ["Bowser's Kingdom"],
+    "description": "The King of the Koopas and Mario's nemesis, always scheming to take over the Mushroom Kingdom with his army."
   },
   {
     "name": "Bowser (Ball A)",
-    "id": 59,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A spherical form of Bowser used in certain battles, also appearing in the Ruined Kingdom."
+    "id": 60,
+    "city": ["Bowser's Kingdom"],
+    "description": "Bowser transformed into a spherical ball, a comical and unexpected shape."
   },
   {
     "name": "Bowser (Ball B)",
-    "id": 60,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "Another spherical form of Bowser with enhanced abilities, also appearing in the Ruined Kingdom."
+    "id": 61,
+    "city": ["Bowser's Kingdom"],
+    "description": "Bowser in another ball form, rolling around and causing chaos in his wake."
   },
   {
     "name": "Bowser (Hat)",
-    "id": 61,
-    "city": ["Bowser's Kingdom", "Cap Kingdom"],
-    "description": "Bowser's special hat, granting him unique powers, also seen in the Cap Kingdom."
+    "id": 62,
+    "city": ["Bowser's Kingdom"],
+    "description": "Bowser's spiky shell hat, a symbol of his power and Koopa authority."
   },
   {
     "name": "Bowser (Suit)",
-    "id": 62,
-    "city": ["Bowser's Kingdom", "Metro Kingdom"],
-    "description": "Bowser in a magnificent suit, often seen in his kingdom but also making appearances in the Metro Kingdom."
+    "id": 63,
+    "city": ["Bowser's Kingdom"],
+    "description": "Bowser dressed in a suit, a rare formal look for the Koopa king attending a special event."
   },
   {
     "name": "Yoshi",
-    "id": 63,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Mario's loyal dinosaur companion, known for his long tongue and egg-laying abilities, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 64,
+    "city": ["Mushroom Kingdom"],
+    "description": "A friendly dinosaur known for his flutter jump, enormous appetite, and loyalty to Mario."
   },
   {
     "name": "Yoshi Egg",
-    "id": 64,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "An egg laid by Yoshi, which can be used as a projectile or to hatch a new Yoshi, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 65,
+    "city": ["Mushroom Kingdom"],
+    "description": "Yoshi's egg, a symbol of new life and potential for adventure."
   },
   {
     "name": "Cappy",
-    "id": 65,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A sentient hat that helps Mario on his adventures by possessing enemies and objects, primarily found in the Cap Kingdom but also assisting in the Mushroom Kingdom."
+    "id": 66,
+    "city": ["Cap Kingdom"],
+    "description": "A sentient hat from the Cap Kingdom and Mario's helpful companion, assisting in capturing enemies."
   },
   {
     "name": "Tiara",
-    "id": 66,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A sentient tiara that assists Mario on his adventures, primarily found in the Cap Kingdom but also in the Mushroom Kingdom."
+    "id": 67,
+    "city": ["Cap Kingdom"],
+    "description": "Peach's magical tiara, a symbol of her royalty and connection to the Mushroom Kingdom."
   },
   {
     "name": "Captain Toad",
-    "id": 67,
-    "city": ["Mushroom Kingdom", "Cascade Kingdom"],
-    "description": "A brave and resourceful Toad who embarks on his own adventures, often seen in the Mushroom Kingdom but also exploring the Cascade Kingdom."
+    "id": 68,
+    "city": ["Mushroom Kingdom"],
+    "description": "The adventurous leader of the Toad Brigade, always seeking treasure and exploring new frontiers."
   },
   {
     "name": "Toadette",
-    "id": 68,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A cheerful Toad who accompanies Mario on his adventures, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 69,
+    "city": ["Mushroom Kingdom"],
+    "description": "A cheerful Toad with a pink mushroom cap, often seen helping Mario on his adventures."
   },
   {
     "name": "Hint Toad",
-    "id": 69,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A helpful Toad who provides hints and tips to Mario, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 70,
+    "city": ["Mushroom Kingdom"],
+    "description": "A helpful Toad who provides hints and tips to Mario on his journey."
   },
   {
     "name": "Toad",
-    "id": 70,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A Toad NPC who provides quests and information, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 71,
+    "city": ["Mushroom Kingdom"],
+    "description": "A common resident of the Mushroom Kingdom, often seen assisting Mario in his quests."
   },
   {
     "name": "Pauline (Dress)",
-    "id": 71,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Pauline in her elegant dress, the mayor of New Donk City, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 72,
+    "city": ["Metro Kingdom"],
+    "description": "Pauline, the Mayor of New Donk City, known for her elegance and leadership."
   },
   {
     "name": "Pauline (Mayor)",
-    "id": 72,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "Pauline in her official mayor outfit, leading New Donk City, primarily found in the Metro Kingdom but also in the Mushroom Kingdom."
+    "id": 73,
+    "city": ["Metro Kingdom"],
+    "description": "Pauline, the Mayor of New Donk City, who also sings beautifully and supports Mario in his adventures."
   },
   {
     "name": "Big Chain Chomp",
-    "id": 73,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A massive and menacing Chain Chomp used by Bowser to guard his fortress, also found in the ruins of the Ruined Kingdom."
+    "id": 74,
+    "city": ["Bowser's Kingdom"],
+    "description": "A massive Chain Chomp, known for its strength and destructive power."
   },
   {
     "name": "Chain Chomp",
-    "id": 74,
-    "city": ["Bowser's Kingdom", "Mushroom Kingdom"],
-    "description": "A ferocious, ball-and-chain enemy often used as a guard in Bowser's Kingdom, also seen in the Mushroom Kingdom."
+    "id": 75,
+    "city": ["Bowser's Kingdom"],
+    "description": "A ferocious Chain Chomp, often chained up but ready to break free and cause havoc."
   },
   {
     "name": "Chargin' Chuck",
-    "id": 75,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A football-themed Koopa Troopa known for charging at enemies, primarily found in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 76,
+    "city": ["Moon Kingdom", "Ruined Kingdom"],
+    "description": "A football-playing Koopa Troopa, known for charging at Mario with great force."
   },
   {
     "name": "Fire Bros",
-    "id": 76,
-    "city": ["Bowser's Kingdom", "Mushroom Kingdom"],
-    "description": "Koopa Troopas that throw fireballs at their enemies, primarily found in Bowser's Kingdom but also in the Mushroom Kingdom."
+    "id": 77,
+    "city": ["Luncheon Kingdom", "Wooded Kingdom"],
+    "description": "Koopa Troopas that throw fireballs, making them a challenging enemy to dodge."
   },
   {
     "name": "Hammer Bros",
-    "id": 77,
-    "city": ["Bowser's Kingdom", "Mushroom Kingdom"],
-    "description": "Koopa Troopas that throw hammers at their enemies, primarily found in Bowser's Kingdom but also in the Mushroom Kingdom."
+    "id": 78,
+    "city": ["Luncheon Kingdom", "Metro Kingdom"],
+    "description": "Koopa Troopas that throw hammers, posing a significant threat to Mario."
   },
   {
     "name": "Goomba",
-    "id": 78,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A common, mushroom-shaped enemy found throughout the kingdoms, primarily in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 79,
+    "city": ["Sand Kingdom", "Lake Kingdom"],
+    "description": "A common enemy in the Mushroom Kingdom, easy to defeat but often found in large numbers."
   },
   {
     "name": "Goombette",
-    "id": 79,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A female variant of the Goomba, often seen in groups, primarily in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 80,
+    "city": ["Bowser's Kingdom", "Lost Kingdom"],
+    "description": "A female Goomba, often seen alongside other Goombas in the Mushroom Kingdom."
   },
   {
     "name": "Paragoomba",
-    "id": 80,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A winged variant of the Goomba, capable of short flights, primarily found in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 81,
+    "city": ["Wooded Kingdom"],
+    "description": "A Goomba with wings, capable of flying and hovering above Mario."
   },
   {
     "name": "Micro Goomba",
-    "id": 81,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A small, harmless variant of the Goomba, primarily found in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 82,
+    "city": ["Lake Kingdom"],
+    "description": "A tiny Goomba, often found in groups and easy to defeat."
   },
   {
     "name": "Spiny",
-    "id": 82,
-    "city": ["Mushroom Kingdom", "Bowser's Kingdom"],
-    "description": "A spiky enemy that rolls around and damages Mario on contact, primarily found in the Mushroom Kingdom but also in Bowser's Kingdom."
+    "id": 83,
+    "city": ["Luncheon Kingdom", "Snow Kingdom"],
+    "description": "A spiky enemy that can damage Mario if touched, requiring careful handling."
   },
   {
     "name": "Bullet Bill",
-    "id": 83,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A dangerous enemy that relentlessly pursues Mario, primarily found in Bowser's Kingdom but also in the Ruined Kingdom."
+    "id": 84,
+    "city": ["Metro Kingdom", "Sand Kingdom"],
+    "description": "A fast-moving projectile enemy that shoots straight at Mario, requiring quick reflexes to avoid."
   },
   {
     "name": "Banzai Bill",
-    "id": 84,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A more powerful variant of the Bullet Bill, primarily found in Bowser's Kingdom but also in the Ruined Kingdom."
+    "id": 85,
+    "city": ["Bowser's Kingdom"],
+    "description": "A massive version of Bullet Bill, extremely dangerous and difficult to dodge."
   },
   {
     "name": "Sherm",
-    "id": 85,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A heavily armored enemy that fires projectiles at Mario, primarily found in Bowser's Kingdom but also in the Ruined Kingdom."
+    "id": 86,
+    "city": ["Wooded Kingdom", "Metro Kingdom"],
+    "description": "A tank-like enemy that shoots projectiles from a distance, requiring strategy to defeat."
   },
   {
     "name": "Trapeetle",
-    "id": 86,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A bomb-like enemy that can be caught and thrown, primarily found in Bowser's Kingdom but also appearing in the Ruined Kingdom."
+    "id": 87,
+    "city": ["Lost Kingdom"],
+    "description": "A beetle-like enemy that can be flipped over to defeat, often found in grassy areas."
   },
   {
     "name": "Hariet",
-    "id": 87,
-    "city": ["Cap Kingdom", "Bowser's Kingdom"],
-    "description": "A creature with a bomb-like tail, often found in the Cap Kingdom, also used by Bowser's forces in his kingdom."
+    "id": 88,
+    "city": ["Sand Kingdom", "Bowser's Kingdom"],
+    "description": "One of the Broodals, a group of rabbit-like enemies who serve Bowser."
   },
   {
     "name": "Fuzzy",
-    "id": 88,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A fuzzy, spider-like enemy that clings to walls and ceilings, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 89,
+    "city": ["Metro Kingdom", "Lake Kingdom"],
+    "description": "A fuzzy enemy that can latch onto Mario, causing damage if not shaken off quickly."
   },
   {
     "name": "Pokio",
-    "id": 89,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A bird-like creature with a long beak, used for climbing and stabbing, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 90,
+    "city": ["Seaside Kingdom", "Bowser's Kingdom"],
+    "description": "A bird-like creature with a long beak, found in the Seaside Kingdom and used for climbing."
   },
   {
     "name": "Urban Stingby",
-    "id": 90,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A bug-like creature that helps plants grow, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 91,
+    "city": ["Metro Kingdom"],
+    "description": "A worm-like enemy often found in urban environments, capable of flying and attacking Mario."
   },
   {
     "name": "Urban Stingby (Worm)",
-    "id": 91,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A worm-like creature that aids in plant growth, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 92,
+    "city": ["Metro Kingdom"],
+    "description": "Another form of the Urban Stingby, slithering through the city streets and posing a threat to Mario."
   },
   {
     "name": "Uproot",
-    "id": 92,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A tall, stretching creature that helps Mario reach high places, primarily found in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 93,
+    "city": ["Wooded Kingdom"],
+    "description": "A strange enemy with extendable legs, capable of reaching great heights to attack Mario."
   },
   {
     "name": "Rabbit",
-    "id": 93,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A fast and agile rabbit found in the forests, primarily in the Wooded Kingdom but also in the Mushroom Kingdom."
+    "id": 94,
+    "city": ["Mushroom Kingdom"],
+    "description": "A common rabbit, hopping around and minding its own business in the Mushroom Kingdom."
   },
   {
     "name": "Burrbo",
-    "id": 94,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
-    "description": "A small, burrowing creature found in grassy areas of the Mushroom Kingdom, also seen in the Wooded Kingdom."
+    "id": 95,
+    "city": ["Cascade Kingdom"],
+    "description": "A dragon-like enemy, soaring through the skies and attacking Mario with fire breath."
   },
   {
     "name": "Burrbo (Ruined Kingdom)",
-    "id": 95,
-    "city": ["Ruined Kingdom", "Sand Kingdom"],
-    "description": "A variant of Burrbo adapted to the ruins of the Ruined Kingdom, also found in the Sand Kingdom."
+    "id": 96,
+    "city": ["Ruined Kingdom"],
+    "description": "A unique Burrbo found exclusively in the desolate Ruined Kingdom, known for its aggressive behavior."
   },
   {
     "name": "Ty-Foo",
-    "id": 96,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A large, aquatic creature found in the waters of the Lake Kingdom, also seen in the Seaside Kingdom."
+    "id": 97,
+    "city": ["Snow Kingdom"],
+    "description": "An enemy that blows wind, pushing Mario around with its gusts and making navigation difficult."
   },
   {
     "name": "Cheep Cheep",
-    "id": 97,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A small, fish-like creature found in the waters of the Lake Kingdom, also seen in the Seaside Kingdom."
+    "id": 98,
+    "city": ["Seaside Kingdom"],
+    "description": "A fish enemy, swimming through the waters of the Seaside Kingdom and jumping out to attack Mario."
   },
   {
     "name": "Frog",
-    "id": 98,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A small amphibian found near water sources in the Lake Kingdom, also seen in the Seaside Kingdom."
+    "id": 99,
+    "city": ["Lake Kingdom"],
+    "description": "A common frog, hopping around and enjoying the wetlands of the Lake Kingdom."
   },
   {
     "name": "Lochlady",
-    "id": 99,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A mystical lady who resides in the waters of the Lake Kingdom, also seen in the Seaside Kingdom."
+    "id": 100,
+    "city": ["Lake Kingdom"],
+    "description": "A graceful resident of Lake Lamode, known for her elegance and helpful nature."
   },
   {
     "name": "Gushen",
-    "id": 100,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A core energy source found in the Lake Kingdom, also seen in the Seaside Kingdom."
+    "id": 101,
+    "city": ["Seaside Kingdom", "Sand Kingdom"],
+    "description": "An enemy that shoots water, often found in the Seaside Kingdom and used for solving puzzles."
   },
   {
     "name": "Sea Man",
-    "id": 101,
-    "city": ["Seaside Kingdom", "Lake Kingdom"],
-    "description": "A sea-dwelling NPC who provides quests and information, primarily found in the Seaside Kingdom but also in the Lake Kingdom."
+    "id": 102,
+    "city": ["Seaside Kingdom"],
+    "description": "A local of the Seaside Kingdom who gives quests to Mario, often involving exploration and challenges."
   },
   {
     "name": "Sea Woman",
-    "id": 102,
-    "city": ["Seaside Kingdom", "Lake Kingdom"],
-    "description": "A sea-dwelling NPC who offers guidance and rewards, primarily found in the Seaside Kingdom but also in the Lake Kingdom."
+    "id": 103,
+    "city": ["Seaside Kingdom"],
+    "description": "A local of the Seaside Kingdom who offers Mario challenges, often related to swimming and diving."
   },
   {
     "name": "Runaway Lizard",
-    "id": 103,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A speedy lizard that runs away when approached, primarily found in the Sand Kingdom but also in the Ruined Kingdom."
+    "id": 104,
+    "city": ["Sand Kingdom"],
+    "description": "A fast-moving lizard that runs away from Mario, but may bite if cornered."
   },
   {
     "name": "Tostarenan (M)",
-    "id": 104,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A resident of the Sand Kingdom, adapted to the desert environment, also found in the Ruined Kingdom."
+    "id": 105,
+    "city": ["Sand Kingdom"],
+    "description": "A male resident of Tostarena, often seen in the Sand Kingdom and involved in local quests."
   },
   {
     "name": "Tostarenan (L)",
-    "id": 105,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A larger variant of the Tostarenan, primarily found in the Sand Kingdom but also in the Ruined Kingdom."
+    "id": 106,
+    "city": ["Sand Kingdom"],
+    "description": "A female resident of Tostarena, known for her wisdom and involvement in the Sand Kingdom's culture."
   },
   {
     "name": "Chincho",
-    "id": 106,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A mummified creature found in the ancient ruins of the Sand Kingdom, also seen in the Ruined Kingdom."
+    "id": 107,
+    "city": ["Sand Kingdom"],
+    "description": "A short, mummy-type enemy with a skull for a head."
   },
   {
     "name": "Sphinx (Quiz)",
-    "id": 107,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A sphinx that challenges Mario with riddles and quizzes, primarily found in the Sand Kingdom but also in the Ruined Kingdom."
+    "id": 108,
+    "city": ["Sand Kingdom"],
+    "description": "A sphinx that asks Mario challenging questions, rewarding him with power moons for correct answers."
   },
   {
     "name": "Jaxi",
-    "id": 108,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A sphinx that Mario can ride to traverse the desert, primarily found in the Sand Kingdom but also in the Ruined Kingdom."
+    "id": 109,
+    "city": ["Sand Kingdom"],
+    "description": "A stone creature that Mario can ride, used for traversing the vast deserts of the Sand Kingdom."
   },
   {
     "name": "T-Rex",
-    "id": 109,
-    "city": ["Cascade Kingdom", "Ruined Kingdom"],
-    "description": "A massive dinosaur that Mario can ride to break through obstacles, primarily found in the Cascade Kingdom but also in the Ruined Kingdom."
+    "id": 110,
+    "city": ["Cascade Kingdom"],
+    "description": "A massive dinosaur that Mario can ride, known for its strength and ability to break through obstacles."
   },
   {
     "name": "RoboBrood",
-    "id": 110,
-    "city": ["Ruined Kingdom", "Cascade Kingdom"],
-    "description": "A stone golem that Mario can climb to reach high places, primarily found in the Ruined Kingdom but also in the Cascade Kingdom."
+    "id": 111,
+    "city": ["Bowser's Kingdom"],
+    "description": "A robotic enemy that serves Bowser, often found in Bowser's Kingdom and capable of powerful attacks."
   },
   {
     "name": "Mollusque-Lanceur",
-    "id": 111,
-    "city": ["Mushroom Kingdom", "Ruined Kingdom"],
-    "description": "A giant, snail-like creature that launches spiked balls at Mario, primarily found in the Mushroom Kingdom but also in the Ruined Kingdom."
+    "id": 112,
+    "city": ["Seaside Kingdom"],
+    "description": "An enemy that shoots projectiles, often found in the Seaside Kingdom and requiring quick reflexes to defeat."
   },
   {
     "name": "Bird (Forest)",
-    "id": 112,
-    "city": ["Wooded Kingdom", "Mushroom Kingdom"],
-    "description": "A small bird commonly found in the forests of the Wooded Kingdom, also seen in the Mushroom Kingdom's wooded areas."
+    "id": 113,
+    "city": ["Wooded Kingdom"],
+    "description": "A bird commonly found in the forests of the Mushroom Kingdom, often seen flying between trees."
   },
   {
     "name": "Bird (Eagle)",
-    "id": 113,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A majestic eagle soaring high above the clouds in the Cloud Kingdom, occasionally spotted near the waterfalls of the Cascade Kingdom."
+    "id": 114,
+    "city": ["Bowser's Kingdom"],
+    "description": "A majestic eagle that soars high above the Bowser's Kingdom, often seen in mountainous areas."
   },
   {
     "name": "Bird (Lake)",
-    "id": 114,
-    "city": ["Lake Kingdom", "Seaside Kingdom"],
-    "description": "A graceful bird often seen near the tranquil waters of the Lake Kingdom, also found along the shores of the Seaside Kingdom."
+    "id": 115,
+    "city": ["Lake Kingdom"],
+    "description": "A bird commonly found near the lakes of the Lake Kingdom, often seen perched on rocks or flying over water."
   },
   {
     "name": "Bird (Gull)",
-    "id": 115,
-    "city": ["Seaside Kingdom", "Lake Kingdom"],
-    "description": "A seagull flying over the beaches and oceans of the Seaside Kingdom, occasionally visiting the Lake Kingdom."
+    "id": 116,
+    "city": ["Seaside Kingdom"],
+    "description": "A seagull commonly found in the Seaside Kingdom, often seen flying over the ocean or resting on the beach."
   },
   {
     "name": "Bird (Lava)",
-    "id": 116,
-    "city": ["Luncheon Kingdom", "Bowser's Kingdom"],
-    "description": "A fiery bird adapted to the extreme heat of the Luncheon Kingdom's lava-filled terrain, also seen in Bowser's Kingdom."
+    "id": 117,
+    "city": ["Luncheon Kingdom"],
+    "description": "A bird adapted to hot environments, often seen flying over lava pools in the Luncheon Kingdom."
   },
   {
     "name": "Bird (Sand)",
-    "id": 117,
-    "city": ["Sand Kingdom", "Ruined Kingdom"],
-    "description": "A desert bird thriving in the arid environment of the Sand Kingdom, also found in the ruins of the Ruined Kingdom."
+    "id": 118,
+    "city": ["Sand Kingdom"],
+    "description": "A bird commonly found in the deserts of the Sand Kingdom, often seen flying over sand dunes."
   },
   {
     "name": "Bird (Snow)",
-    "id": 118,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "A hardy bird that endures the cold climate of the Snow Kingdom, occasionally seen in the Mushroom Kingdom during winter."
+    "id": 119,
+    "city": ["Snow Kingdom"],
+    "description": "A bird adapted to cold environments, often seen flying over snowy landscapes in the Snow Kingdom."
   },
   {
     "name": "Bird (Waterfall)",
-    "id": 119,
-    "city": ["Cascade Kingdom", "Lake Kingdom"],
-    "description": "A bird often seen near the cascading waterfalls of the Cascade Kingdom, also found near the Lake Kingdom's waters."
+    "id": 120,
+    "city": ["Cascade Kingdom"],
+    "description": "A bird commonly found near waterfalls in the Cascade Kingdom, often seen perched on rocks or flying through mist."
   },
   {
     "name": "Bird (Cap)",
-    "id": 120,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A small bird that inhabits the Cap Kingdom, often perched on top hats, also seen in the Mushroom Kingdom."
+    "id": 121,
+    "city": ["Cap Kingdom"],
+    "description": "A bird commonly found in the Cap Kingdom, often seen flying around the hat-shaped structures."
   },
   {
     "name": "Bird (City)",
-    "id": 121,
-    "city": ["Metro Kingdom", "Mushroom Kingdom"],
-    "description": "An urban bird commonly seen flying around the Metro Kingdom skyscrapers, also found in the Mushroom Kingdom."
+    "id": 122,
+    "city": ["Metro Kingdom"],
+    "description": "A bird commonly found in the urban environment of the Metro Kingdom, often seen perched on buildings or flying through the city streets."
   },
   {
     "name": "Bird (Cloud)",
-    "id": 122,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A bird that soars gracefully through the skies of the Cloud Kingdom, also seen in the Cascade Kingdom."
+    "id": 123,
+    "city": ["Cloud Kingdom"],
+    "description": "A bird commonly found in the Cloud Kingdom, often seen flying through the fluffy clouds."
   },
   {
     "name": "Bird (Sky)",
-    "id": 123,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A rare bird that flies at high altitudes, barely visible from the ground, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 124,
+    "city": ["Cloud Kingdom"],
+    "description": "A bird that soars high in the sky, often seen in the Cloud Kingdom and other high-altitude areas."
   },
   {
     "name": "Bird",
-    "id": 124,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A generic bird found in Mushroom Kingdom, often seen flying or perched, also found in the Cap Kingdom."
+    "id": 125,
+    "city": ["Mushroom Kingdom"],
+    "description": "A regular bird commonly found throughout the Mushroom Kingdom, often seen flying or perched in trees."
   },
   {
     "name": "Glydon",
-    "id": 125,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A gliding creature that helps Mario traverse large gaps, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 126,
+    "city": ["Cloud Kingdom"],
+    "description": "A creature that Mario can ride to glide through the air, often found in the Cloud Kingdom."
   },
   {
     "name": "Lakitu",
-    "id": 126,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A cloud-like creature that helps Mario traverse the skies, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 127,
+    "city": ["Sand Kingdom"],
+    "description": "A Koopa Troopa that rides a cloud, often seen throwing Spiny Eggs at Mario."
   },
   {
     "name": "Lakitu (Cloud)",
-    "id": 127,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A variant of Lakitu that blends in with the clouds, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 128,
+    "city": ["Sand Kingdom", "Cloud Kingdom"],
+    "description": "A Lakitu that resides in the Cloud Kingdom, often seen flying high above the clouds."
   },
   {
     "name": "Klepto",
-    "id": 128,
-    "city": ["Cloud Kingdom", "Cascade Kingdom"],
-    "description": "A thieving bird that steals items from Mario, primarily found in the Cloud Kingdom but also in the Cascade Kingdom."
+    "id": 129,
+    "city": ["Sand Kingdom"],
+    "description": "A mischievous enemy that steals items from Mario, requiring quick action to retrieve them."
   },
   {
     "name": "Karon Wing",
-    "id": 129,
-    "city": ["Bowser's Kingdom", "Ruined Kingdom"],
-    "description": "A winged variant of the Karon enemy, primarily found in Bowser's Kingdom but also in the Ruined Kingdom."
+    "id": 130,
+    "city": ["Bowser's Kingdom", "Sand Kingdom"],
+    "description": "A winged version of a Dry Bones, often seen flying around and attacking Mario."
   },
   {
     "name": "Bonneton Female",
-    "id": 130,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A female resident of Bonneton, the main town in the Cap Kingdom, occasionally visiting the Mushroom Kingdom."
+    "id": 131,
+    "city": ["Cap Kingdom"],
+    "description": "A female resident of Bonneton, known for selling hats and assisting Mario in the Cap Kingdom."
   },
   {
     "name": "Bonneton Male",
-    "id": 131,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A male resident of Bonneton, the main town in the Cap Kingdom, occasionally visiting the Mushroom Kingdom."
+    "id": 132,
+    "city": ["Cap Kingdom"],
+    "description": "A male resident of Bonneton, known for designing hats and assisting Mario in the Cap Kingdom."
   },
   {
     "name": "Topper",
-    "id": 132,
-    "city": ["Cap Kingdom", "Mushroom Kingdom"],
-    "description": "A resident of the Cap Kingdom who wears a fancy top hat, also seen in the Mushroom Kingdom."
+    "id": 133,
+    "city": ["Cap Kingdom", "Bowser's Kingdom"],
+    "description": "One of the Broodals, a group of rabbit-like enemies who serve Bowser and are known for their green hats."
   },
   {
     "name": "Madame Broode",
-    "id": 133,
-    "city": ["Cap Kingdom", "Moon Kingdom"],
-    "description": "An antagonist who causes trouble and challenges Mario throughout his journey, appearing in both the Cap and Moon Kingdoms."
+    "id": 134,
+    "city": ["Cascade Kingdom", "Moon Kingdom"],
+    "description": "A large, intimidating enemy who serves Bowser, often seen riding a Chain Chomp in the Cap Kingdom."
   },
   {
     "name": "Madame Broode (Wanwan)",
-    "id": 134,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Madame Broode's pet Wanwan, which attacks Mario and causes mischief, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 135,
+    "city": ["Cascade Kingdom", "Moon Kingdom"],
+    "description": "Madame Broode's loyal Chain Chomp, known for its aggressive behavior and powerful attacks."
   },
   {
     "name": "Madame Broode (Wanwan Break)",
-    "id": 135,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "Wanwan who broke from Madame Broode's chains, causing chaos and attacking Mario, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 136,
+    "city": ["Cascade Kingdom", "Moon Kingdom"],
+    "description": "Madame Broode's Chain Chomp after breaking free, often causing chaos in the Cap Kingdom."
   },
   {
     "name": "Stairface Ogre",
-    "id": 136,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A friendly NPC who offers quests and rewards, often seen in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 137,
+    "city": ["Bowser's Kingdom"],
+    "description": "A massive ogre that serves as a boss in the Bowser's Kingdom, known for its strength and challenging battles."
   },
   {
     "name": "Dorrie",
-    "id": 137,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A wise NPC who provides guidance and information, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 138,
+    "city": ["Lake Kingdom", "Mushroom Kingdom"],
+    "description": "A friendly dinosaur that Mario can ride, often found in the Mushroom Kingdom and used for traversing water."
   },
   {
     "name": "Coin Coffer",
-    "id": 138,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A quirky NPC with a unique personality, often seen in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 139,
+    "city": ["Wooded Kingdom", "Sand Kingdom"],
+    "description": "A treasure chest filled with coins, often found in the Wooded Kingdom and requiring a key to open."
   },
   {
     "name": "Tropical Wiggler",
-    "id": 139,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
-    "description": "A small, timid creature often found hiding in the Mushroom Kingdom, also seen in the Wooded Kingdom."
+    "id": 140,
+    "city": ["Lost Kingdom", "Moon Kingdom"],
+    "description": "A Wiggler found in tropical locations, often seen in the Seaside Kingdom and used for solving puzzles."
   },
   {
     "name": "Joku",
-    "id": 140,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A mysterious NPC with a cryptic personality, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 141,
+    "city": ["Mushroom Kingdom"],
+    "description": "A stretchy enemy that can extend its body to reach Mario, often found in the Mushroom Kingdom."
   },
   {
     "name": "Moe-Eye",
-    "id": 141,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A bespectacled NPC who provides helpful advice and quests, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 142,
+    "city": ["Sand Kingdom", "Moon Kingdom"],
+    "description": "An enemy that wears sunglasses and shoots lasers, often found in the Sand Kingdom and requiring strategy to defeat."
   },
   {
     "name": "Koopa",
-    "id": 142,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A friendly Koopa Troopa NPC who offers quests and information, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 143,
+    "city": ["Cascade Kingdom"],
+    "description": "A common enemy in the Mushroom Kingdom, often seen walking around and attacking Mario."
   },
   {
     "name": "Poochy",
-    "id": 143,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A friendly dog NPC who accompanies Mario on his adventures, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 144,
+    "city": ["Sand Kingdom"],
+    "description": "A friendly dog-like creature that Mario can ride, often found in the Mushroom Kingdom and used for traversing difficult terrain."
   },
   {
     "name": "Nintendog",
-    "id": 144,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A dog-like NPC who provides quests and rewards, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 145,
+    "city": ["Seaside Kingdom"],
+    "description": "A virtual pet from the Nintendog series, often seen in the Mushroom Kingdom as a nostalgic reference."
   },
   {
     "name": "Talkatoo",
-    "id": 145,
-    "city": ["Mushroom Kingdom", "Cap Kingdom"],
-    "description": "A parrot-like creature that repeats phrases and provides hints, primarily found in the Mushroom Kingdom but also in the Cap Kingdom."
+    "id": 146,
+    "city": ["Sand Kingdom"],
+    "description": "A talking bird that provides hints and tips to Mario, often found in the Mushroom Kingdom."
   },
   {
     "name": "Snow Man",
-    "id": 146,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "A snowman NPC found in the icy tundra of the Snow Kingdom, also seen in the Mushroom Kingdom during winter."
+    "id": 147,
+    "city": ["Snow Kingdom"],
+    "description": "A snowman commonly found in the Snow Kingdom, often seen standing in snowy areas."
   },
   {
     "name": "Snow Man Leader",
-    "id": 147,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "The leader of the Snow Men, guiding others in the Snow Kingdom, also seen in the Mushroom Kingdom during winter."
+    "id": 148,
+    "city": ["Snow Kingdom"],
+    "description": "The leader of the snowmen in the Snow Kingdom, often seen giving quests to Mario."
   },
   {
     "name": "Snow Man Racer",
-    "id": 148,
-    "city": ["Snow Kingdom", "Mushroom Kingdom"],
-    "description": "A Snow Man who participates in races and challenges, primarily found in the Snow Kingdom but also in the Mushroom Kingdom."
+    "id": 149,
+    "city": ["Snow Kingdom"],
+    "description": "A snowman that participates in races in the Snow Kingdom, often seen sliding down snowy hills."
   },
   {
     "name": "Volbonan",
-    "id": 149,
+    "id": 150,
     "city": ["Luncheon Kingdom"],
-    "description": "A friendly NPC who provides quests and rewards, primarily found in the Luncheon Kingdom."
+    "description": "A resident of the Luncheon Kingdom, often seen cooking and assisting Mario in his adventures."
   },
   {
     "name": "Volbonan (Chef)",
-    "id": 150,
+    "id": 151,
     "city": ["Luncheon Kingdom"],
-    "description": "A skilled chef from the Luncheon Kingdom who prepares delicious dishes, primarily found in the Luncheon Kingdom."
+    "description": "A chef in the Luncheon Kingdom, known for cooking delicious meals and assisting Mario in his quests."
   },
   {
     "name": "Volbonan (Small, Chef)",
-    "id": 151,
+    "id": 152,
     "city": ["Luncheon Kingdom"],
-    "description": "A smaller variant of Volbonan who works as a chef, primarily found in the Luncheon Kingdom."
+    "description": "A small chef in the Luncheon Kingdom, known for preparing tiny dishes and assisting Mario in his adventures."
   },
   {
     "name": "Volbonan (Small)",
-    "id": 152,
+    "id": 153,
     "city": ["Luncheon Kingdom"],
-    "description": "A smaller variant of Volbonan, often seen helping out in the Luncheon Kingdom."
+    "description": "A small resident of the Luncheon Kingdom, often seen assisting Mario in his adventures and solving puzzles."
   },
   {
     "name": "Sheep",
-    "id": 153,
-    "city": ["Mushroom Kingdom", "Wooded Kingdom"],
-    "description": "A fluffy sheep that roams the fields, primarily found in the Mushroom Kingdom but also in the Wooded Kingdom."
-  },
-  {
-      "name": "Mario",
-      "id": 154,
-      "city": ["Mushroom Kingdom"],
-      "description": "Mario in his classic red and blue outfit, ready for adventure in the Mushroom Kingdom."
+    "id": 154,
+    "city": ["Sand Kingdom"],
+    "description": "A common sheep found in the Mushroom Kingdom, often seen grazing in grassy areas."
   }
 ]

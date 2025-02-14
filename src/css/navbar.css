@@ -18,6 +18,10 @@
   transition: 200ms all;
   background-color: rgba(0, 0 , 0, 0.7);
   border-radius: 0 0 100px 100px;
+  background-image: url("../assets/icons/pattern.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 #navbar .navbar-mario div {

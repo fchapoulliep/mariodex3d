@@ -89,6 +89,11 @@
   background-image: url("../assets/card-types/metro-kingdom.svg");
 }
 
+.mario-cards.lost-kingdom {
+  background-color: #4b8b3b;
+  background-image: url("../assets/card-types/lost-kingdom.svg");
+}
+
 .inner-element {
   display: flex;
   flex-direction: column;
