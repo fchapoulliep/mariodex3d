@@ -23,6 +23,11 @@
   font-size: 13px;
 }
 
+.type-div img {
+  max-width: 24px;
+  max-height: 24px;
+}
+
 #mario-overlay .type-div p {
   font-size: 16px;
 }

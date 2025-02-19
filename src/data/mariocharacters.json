@@ -404,7 +404,7 @@
   {
     "name": "Captain Toad",
     "id": 68,
-    "city": ["Mushroom Kingdom"],
+    "city": ["Cascade Kingdom", "Cap Kingdom"],
     "description": "The adventurous leader of the Toad Brigade, always seeking treasure and exploring new frontiers."
   },
   {
@@ -416,7 +416,7 @@
   {
     "name": "Hint Toad",
     "id": 70,
-    "city": ["Mushroom Kingdom"],
+    "city": ["Sand Kingdom", "Metro Kingdom"],
     "description": "A helpful Toad who provides hints and tips to Mario on his journey."
   },
   {
@@ -590,7 +590,7 @@
   {
     "name": "Frog",
     "id": 99,
-    "city": ["Lake Kingdom"],
+    "city": ["Lake Kingdom", "Cap Kingdom"],
     "description": "A common frog, hopping around and enjoying the wetlands of the Lake Kingdom."
   },
   {
@@ -921,6 +921,6 @@
     "name": "Sheep",
     "id": 154,
     "city": ["Sand Kingdom"],
-    "description": "A common sheep found in the Mushroom Kingdom, often seen grazing in grassy areas."
+    "description": "A common sheep found in the Sand Kingdom."
   }
 ]
