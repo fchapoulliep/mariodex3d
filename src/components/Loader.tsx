@@ -8,7 +8,7 @@ import "../css/loader.css";
  * Loader component that displays a loading animation.
  *
  * This component includes:
- * - A Sharingan Radar animation.
+ * - A Mario Star animation.
  *
  * @component
  * @example
