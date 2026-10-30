@@ -64,3 +64,18 @@
     font-size: 11px;
   }
 }
+
+/* Smaller screens: a three-column grid keeps the clock at the exact center,
+   whatever the length of the two links around it */
+@media screen and (max-width: 850px) {
+  #navbar .navbar-mario {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 10px;
+  }
+
+  #navbar .navbar-mario div {
+    width: auto;
+  }
+}
