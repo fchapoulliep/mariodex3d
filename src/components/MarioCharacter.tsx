@@ -1,7 +1,7 @@
 /**
  * Importing React, the Loader component, the MarioType component, and the Link component.
  */
-import React, { useEffect, useMemo } from "react";
+import React, { Suspense, useEffect, useLayoutEffect, useMemo, useRef } from "react";
 import { useFrame } from "@react-three/fiber";
 import { Canvas } from "@react-three/fiber";
 import {
@@ -29,6 +29,8 @@ interface MarioProps {
  */
 interface MarioModelProps {
   modelPath: string;
+  /** Called once the model is drawn and its framing has settled. */
+  onReady: () => void;
 }
 
 /**
@@ -40,9 +42,10 @@ interface MarioModelProps {
  * @param {string} props.modelPath - The path to the 3D model file.
  * @returns {JSX.Element} The rendered 3D model of the Mario Character.
  */
-const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
+const MarioModel: React.FC<MarioModelProps> = ({ modelPath, onReady }) => {
   const { scene, animations } = useGLTF(modelPath);
   const mixer = new THREE.AnimationMixer(scene);
+  const frames = useRef(0);
   const [minZoomDistance, setMinZoomDistance] = React.useState(0);
 
   useEffect(() => {
@@ -65,6 +68,12 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
 
   useFrame((_, delta) => {
     mixer.update(delta);
+    // A few frames let the framing settle (centering, scale, camera fit): only
+    // then is the model shown, so that it never jumps or glides into place.
+    frames.current += 1;
+    if (frames.current === 5) {
+      onReady();
+    }
   });
 
   useEffect(() => {
@@ -75,6 +84,9 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
 
   useEffect(() => {
     if (scene) {
+      // A model already seen comes back from the cache with the position of its
+      // last visit: start from the origin so that it is centered the same way.
+      scene.position.set(0, 0, 0);
       const box = new THREE.Box3().setFromObject(scene);
       const center = new THREE.Vector3();
       box.getCenter(center);
@@ -91,7 +103,8 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
 
   return (
     <group>
-      <Bounds fit clip observe margin={1.5}>
+      {/* The camera frames the model at once rather than gliding to it */}
+      <Bounds fit clip observe margin={1.5} maxDuration={0.001}>
         <primitive object={scene} />
         <PerspectiveCamera makeDefault position={[0, 10, 50]} />
         <OrbitControls
@@ -108,13 +121,21 @@ const MarioModel: React.FC<MarioModelProps> = ({ modelPath }) => {
 };
 
 /**
+ * Models drawn during this visit. drei keeps them in memory, so they come back
+ * at once and need no loader.
+ */
+const seenModels = new Set<string>();
+
+/** How long the loader stays at least, for a model not seen yet. */
+const LOADER_MIN_MS = 1000;
+
+/**
  *  Component that renders a Mario Character page with a 3D model, description, and type information.
  * @param marioId The ID of the Character to display.
  * @returns The Mario Character page with the 3D model, description, and type information.
  */
 const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
   const mariocharacter = marioList.find((p) => p.id === parseInt(marioId));
-  const [loading, setLoading] = React.useState(true);
 
   const mariocharacterName = mariocharacter ? mariocharacter.name : "";
 
@@ -122,17 +143,40 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
     () =>
       `${
         import.meta.env.BASE_URL
-      }models/${mariocharacterName}/${mariocharacterName}.glb?v=${new Date().getTime()}`,
+      }models/${mariocharacterName}/${mariocharacterName}.glb?v=${__BUILD_ID__}`,
     [mariocharacterName]
   );
 
-  useEffect(() => {
-    const loader = document.querySelector(".loader");
-    if (loader) {
-      loader.classList.remove("animation");
+  // The loader follows the model rather than a fixed delay. A model not seen
+  // yet shows it at once and for at least LOADER_MIN_MS, so that a quick load
+  // reads as a transition rather than a black flash; a model already seen
+  // during the visit is still in memory and shows up without it.
+  const [loaderPhase, setLoaderPhase] = React.useState<
+    "visible" | "closing" | "hidden"
+  >("visible");
+  const [drawnPath, setDrawnPath] = React.useState<string | null>(null);
+  const modelDrawn = drawnPath === modelPath;
+  const loaderShownAt = useRef(performance.now());
+
+  useLayoutEffect(() => {
+    if (seenModels.has(modelPath)) {
+      setLoaderPhase("hidden");
+      return;
     }
-    setLoading(false);
+    loaderShownAt.current = performance.now();
+    setLoaderPhase("visible");
   }, [modelPath]);
+
+  useEffect(() => {
+    if (!modelDrawn) return;
+    seenModels.add(modelPath);
+    const elapsed = performance.now() - loaderShownAt.current;
+    const timer = setTimeout(
+      () => setLoaderPhase((phase) => (phase === "visible" ? "closing" : phase)),
+      Math.max(0, LOADER_MIN_MS - elapsed),
+    );
+    return () => clearTimeout(timer);
+  }, [modelDrawn, modelPath]);
 
   if (!mariocharacter) {
     return (
@@ -152,15 +196,6 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
     );
   }
 
-  useEffect(() => {
-    const loader = document.querySelector(".loader");
-    if (loader && !loading) {
-      setTimeout(() => {
-        loader.classList.add("animation");
-      }, 1500);
-    }
-  });
-
   return (
     <div
       id="mario-overlay"
@@ -176,7 +211,12 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
         backgroundSize: "cover",
       }}
     >
-      <Loader />
+      {loaderPhase !== "hidden" && (
+        <Loader
+          closing={loaderPhase === "closing"}
+          onClosed={() => setLoaderPhase("hidden")}
+        />
+      )}
       <div className="mario-description">
         <h2>{mariocharacter.name}</h2>
         <p>{mariocharacter.description}</p>
@@ -187,11 +227,23 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
         ))}
       </div>
 
-      <Canvas style={{ background: "transparent" }} shadows key={modelPath}>
+      <Canvas style={{
+          background: "transparent",
+          // Hidden until the model is in place, then faded in
+          opacity: modelDrawn ? 1 : 0,
+          transition: "opacity 150ms",
+        }} shadows key={modelPath}>
         <ambientLight intensity={1} />
         <directionalLight position={[-5, 5, 5]} intensity={2} castShadow />
         <directionalLight position={[5, 5, -5]} intensity={2} castShadow />
-        <MarioModel modelPath={modelPath} />
+        {/* A model still loading suspends the scene only: without this boundary,
+            the page itself would wait, and the previous page would stay on screen */}
+        <Suspense fallback={null}>
+          <MarioModel
+            modelPath={modelPath}
+            onReady={() => setDrawnPath(modelPath)}
+          />
+        </Suspense>
       </Canvas>
     </div>
   );
