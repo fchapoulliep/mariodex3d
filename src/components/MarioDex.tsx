@@ -31,6 +31,11 @@ import marioLogo from "../assets/logo/marioLogo.png";
  * )
  */
 const MarioDex: React.FC = () => {
+  // Back on the list after a character page, the tab title goes back to the site name.
+  React.useEffect(() => {
+    document.title = "MarioDex 3D";
+  }, []);
+
   const [marioCharacterToShow, setMarioCharacterToShow] =
     React.useState(marioCharacterList);
   const [searchQuery, setSearchQuery] = React.useState("");
