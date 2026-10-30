@@ -155,6 +155,7 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
     "visible" | "closing" | "hidden"
   >("visible");
   const [drawnPath, setDrawnPath] = React.useState<string | null>(null);
+  const [descriptionOpen, setDescriptionOpen] = React.useState(false);
   const modelDrawn = drawnPath === modelPath;
   const loaderShownAt = useRef(performance.now());
 
@@ -217,9 +218,28 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
           onClosed={() => setLoaderPhase("hidden")}
         />
       )}
-      <div className="mario-description">
-        <h2>{mariocharacter.name}</h2>
-        <p>{mariocharacter.description}</p>
+      {/* On phones the description folds into a bar with the name, opened on demand;
+          on wider screens it is always open and the toggle is hidden */}
+      <div className={`mario-description${descriptionOpen ? " open" : ""}`}>
+        <div className="description-head">
+          <h2>{mariocharacter.name}</h2>
+          <button
+            type="button"
+            className="description-toggle"
+            aria-expanded={descriptionOpen}
+            aria-controls="mario-details"
+            aria-label={descriptionOpen ? "Hide the description" : "Show the description"}
+            onClick={() => setDescriptionOpen((open) => !open)}
+          >
+            {/* Lucide "chevron-up" icon (ISC license) */}
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m18 15-6-6-6 6" />
+            </svg>
+          </button>
+        </div>
+        <div id="mario-details" className="description-details">
+          <p>{mariocharacter.description}</p>
+        </div>
       </div>
       <div className="mario-types">
         {mariocharacter.city.map((cityItem) => (
