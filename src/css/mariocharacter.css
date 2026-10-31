@@ -9,6 +9,24 @@
   justify-content: center;
   pointer-events: none;
   overflow: hidden;
+  /* Seen until the kingdom background has fully loaded */
+  background-color: #111;
+}
+
+/* A kingdom background, added once fully loaded (so that it never paints in
+   strips): it fades in over the previous one */
+#mario-overlay .mario-background {
+  position: absolute;
+  inset: 0;
+  background-position: bottom;
+  background-size: cover;
+  animation: backgroundIn 500ms ease-out;
+}
+
+@keyframes backgroundIn {
+  from {
+    opacity: 0;
+  }
 }
 
 #mario-overlay .mario-description {

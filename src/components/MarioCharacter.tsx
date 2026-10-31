@@ -219,6 +219,42 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
     setLoaderPhase((phase) => (phase === "visible" ? "closing" : phase));
   }, [modelDrawn, modelPath]);
 
+  const backgroundPath = mariocharacter
+    ? `${import.meta.env.BASE_URL}backgrounds/${mariocharacter.city[0]
+        .normalize("NFD")
+        .toLowerCase()
+        .replace(/ /g, "-")
+        .replace("'s", "")}.webp`
+    : null;
+
+  // A background shows only once fully loaded and decoded, then fades in over
+  // the previous one (or the dark base), which leaves once fully covered
+  const [backgrounds, setBackgrounds] = React.useState<{ id: number; path: string }[]>([]);
+  const nextBackgroundId = useRef(0);
+
+  useEffect(() => {
+    if (!backgroundPath) return;
+    let cancelled = false;
+    const image = new Image();
+    image.src = backgroundPath;
+    image
+      .decode()
+      .catch(() => undefined)
+      .then(() => {
+        if (cancelled) return;
+        // A new id each time, so that coming back to a background fades it in again
+        const id = nextBackgroundId.current++;
+        setBackgrounds((layers) =>
+          layers[layers.length - 1]?.path === backgroundPath
+            ? layers
+            : [...layers, { id, path: backgroundPath }],
+        );
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [backgroundPath]);
+
   if (!mariocharacter) {
     return (
       <div
@@ -238,20 +274,18 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
   }
 
   return (
-    <div
-      id="mario-overlay"
-      style={{
-        backgroundImage: `url(${
-          import.meta.env.BASE_URL
-        }backgrounds/${mariocharacter.city[0]
-          .normalize("NFD")
-          .toLowerCase()
-          .replace(/ /g, "-")
-          .replace("'s", "")}.webp)`,
-        backgroundPosition: "bottom",
-        backgroundSize: "cover",
-      }}
-    >
+    <div id="mario-overlay">
+      {backgrounds.map((layer) => (
+        <div
+          key={layer.id}
+          className="mario-background"
+          style={{ backgroundImage: `url(${layer.path})` }}
+          // Once this one has faded in, the layers it covers leave the page
+          onAnimationEnd={() =>
+            setBackgrounds((layers) => layers.filter((other) => other.id >= layer.id))
+          }
+        />
+      ))}
       {loaderPhase !== "hidden" && (
         <Loader
           closing={loaderPhase === "closing"}
