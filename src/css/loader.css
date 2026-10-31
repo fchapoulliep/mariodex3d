@@ -39,6 +39,20 @@
   position: relative;
   overflow: hidden;
   background-image: linear-gradient(#fcf988, #ede600, #7d7904);
+  /* The star is a yellow square under black masks: cut along its outline,
+     so that the masks no longer show as a black square over the page */
+  clip-path: polygon(
+    50% 3.7%,
+    60.8% 38%,
+    98% 38%,
+    68.2% 59.4%,
+    79.7% 94%,
+    50% 72.6%,
+    20.3% 94%,
+    31.8% 59.4%,
+    2% 38%,
+    39.2% 38%
+  );
   -webkit-animation: float 1.5s infinite linear;
   animation: float 1s infinite linear;
 }
