@@ -79,3 +79,29 @@
     width: auto;
   }
 }
+
+/* Short labels on phones: the long ones touched and then overflowed the
+   bar's ends (iPhone 14); room at both ends, the clock on one line */
+#navbar .label-short {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  #navbar .navbar-mario {
+    box-sizing: border-box;
+    padding: 0 22px;
+  }
+
+  #navbar .navbar-mario a,
+  #navbar .navbar-time {
+    white-space: nowrap;
+  }
+
+  #navbar .label-long {
+    display: none;
+  }
+
+  #navbar .label-short {
+    display: inline;
+  }
+}
