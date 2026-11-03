@@ -80,20 +80,38 @@
   }
 }
 
-/* Short labels on phones: the long ones touched and then overflowed the
-   bar's ends (iPhone 14); room at both ends, the clock on one line */
+/* Phones: the same bar on every dex (it overflowed on an iPhone 14). Short
+   labels (the dex's name already reads as the way home), the same bar and
+   font sizes, the three items evenly spaced */
 #navbar .label-short {
   display: none;
 }
 
 @media screen and (max-width: 480px) {
+  #navbar {
+    height: 52px;
+  }
+
   #navbar .navbar-mario {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 92%;
+    height: 44px;
+    padding: 0 18px;
     box-sizing: border-box;
-    padding: 0 22px;
+    gap: 0;
+  }
+
+  #navbar .navbar-mario > div:nth-child(n) {
+    display: flex;
+    width: auto;
   }
 
   #navbar .navbar-mario a,
+  #navbar .navbar-mario p,
   #navbar .navbar-time {
+    font-size: 12px;
     white-space: nowrap;
   }
 
