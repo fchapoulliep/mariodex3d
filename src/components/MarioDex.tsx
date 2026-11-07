@@ -16,6 +16,7 @@ import marioCharacterList from "../data/mariocharacters.json";
 
 /* Importing the Footer component */
 import Footer from "./Footer";
+import Onboarding from "./Onboarding";
 import MarioCard from "./MarioCard";
 
 import marioLogo from "../assets/logo/marioLogo.png";
@@ -159,6 +160,15 @@ const MarioDex: React.FC = () => {
         </Swiper>
       </div>
       <Footer />
+      <Onboarding
+        step="cards"
+        target=".swiper-slide-active .mario-cards"
+        text={{
+          mouse: "Click a card to meet the character in 3D!",
+          touch: "Tap a card to meet the character in 3D!",
+        }}
+        button="Got it"
+      />
     </div>
   );
 };

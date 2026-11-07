@@ -23,6 +23,18 @@
   --coin: #ffd23f;
 }
 
+/* Colours of the first-visit guide (see onboarding.css) */
+:root {
+  --ob-dim: rgba(20, 26, 64, 0.74);
+  --ob-ring: var(--coin);
+  --ob-box-bg: #ffffff;
+  --ob-box-text: var(--brick-dark);
+  --ob-box-border: 5px solid var(--brick-dark);
+  --ob-box-radius: 16px;
+  --ob-box-shadow: 6px 6px 0 var(--brick-dark);
+  --ob-button: var(--brick);
+}
+
 body {
   background-color: #6b9dfc;
 }

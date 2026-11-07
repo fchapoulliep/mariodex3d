@@ -13,6 +13,7 @@ import {
 } from "@react-three/drei";
 import marioList from "../data/mariocharacters.json";
 import Loader from "./Loader";
+import Onboarding from "./Onboarding";
 import * as THREE from "three";
 import "../css/mariocharacter.css";
 import MarioType from "./MarioType";
@@ -374,6 +375,15 @@ const MarioCharacter: React.FC<MarioProps> = ({ marioId }) => {
           />
         </Suspense>
       </Canvas>
+      <Onboarding
+        step="model"
+        ready={modelDrawn}
+        text={{
+          mouse: `Drag to spin ${mariocharacter.name} around, scroll to zoom in.`,
+          touch: `Swipe to spin ${mariocharacter.name} around, pinch to zoom in.`,
+        }}
+        button="Let's go"
+      />
     </div>
   );
 };
