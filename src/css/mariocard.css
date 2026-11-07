@@ -8,90 +8,98 @@
   color: white;
   border-radius: 20px;
   transform-style: preserve-3d;
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 24px rgba(20, 40, 110, 0.35);
   transition: height 0.3s ease-in-out;
   max-height: 550px;
 }
 
-.mario-cards {
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 160%;
+/* The kingdom symbol, drawn as a mask in translucent white whatever the
+   card's colour (the SVGs carry fills tuned to the old light cards) */
+.mario-cards::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 20px;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.12);
+  -webkit-mask: var(--symbol) no-repeat top left / 160%;
+  mask: var(--symbol) no-repeat top left / 160%;
 }
 
 .mario-cards.mushroom-kingdom {
-  background-color: #d93a2b;
-  background-image: url("../assets/card-types/mushroom-kingdom.svg");
+  background-color: #d03425;
+  --symbol: url("../assets/card-types/mushroom-kingdom.svg");
 }
 
 .mario-cards.wooded-kingdom {
   background-color: #3e7d2a;
-  background-image: url("../assets/card-types/wooded-kingdom.svg");
+  --symbol: url("../assets/card-types/wooded-kingdom.svg");
 }
 
 .mario-cards.cloud-kingdom {
-  background-color: #c7e3f2;
-  background-image: url("../assets/card-types/cloud-kingdom.svg");
+  background-color: #25759f;
+  --symbol: url("../assets/card-types/cloud-kingdom.svg");
 }
 
 .mario-cards.bowser-kingdom {
-  background-color: #4a2f2f;
-  background-image: url("../assets/card-types/bowser-kingdom.svg");
+  background-color: #582121;
+  --symbol: url("../assets/card-types/bowser-kingdom.svg");
 }
 
 .mario-cards.lake-kingdom {
-  background-color: #6aa7e6;
-  background-image: url("../assets/card-types/lake-kingdom.svg");
+  background-color: #206fc0;
+  --symbol: url("../assets/card-types/lake-kingdom.svg");
 }
 
 .mario-cards.seaside-kingdom {
-  background-color: #55c2a5;
-  background-image: url("../assets/card-types/seaside-kingdom.svg");
+  background-color: #2c7b66;
+  --symbol: url("../assets/card-types/seaside-kingdom.svg");
 }
 
 .mario-cards.luncheon-kingdom {
-  background-color: #ff7675;
-  background-image: url("../assets/card-types/luncheon-kingdom.svg");
+  background-color: #e00200;
+  --symbol: url("../assets/card-types/luncheon-kingdom.svg");
 }
 
 .mario-cards.sand-kingdom {
-  background-color: #e0c38c;
-  background-image: url("../assets/card-types/sand-kingdom.svg");
+  background-color: #8a6725;
+  --symbol: url("../assets/card-types/sand-kingdom.svg");
 }
 
 .mario-cards.snow-kingdom {
-  background-color: #dfdede;
-  background-image: url("../assets/card-types/snow-kingdom.svg");
+  background-color: #706d6d;
+  --symbol: url("../assets/card-types/snow-kingdom.svg");
 }
 
 .mario-cards.cascade-kingdom {
-  background-color: #5dc9a2;
-  background-image: url("../assets/card-types/cascade-kingdom.svg");
+  background-color: #2a7d5f;
+  --symbol: url("../assets/card-types/cascade-kingdom.svg");
 }
 
 .mario-cards.cap-kingdom {
-  background-color: #5c5c76;
-  background-image: url("../assets/card-types/cap-kingdom.svg");
+  background-color: #3a3a98;
+  --symbol: url("../assets/card-types/cap-kingdom.svg");
 }
 
 .mario-cards.moon-kingdom {
-  background-color: #f8e6a0;
-  background-image: url("../assets/card-types/moon-kingdom.svg");
+  background-color: #856c0a;
+  --symbol: url("../assets/card-types/moon-kingdom.svg");
 }
 
 .mario-cards.ruined-kingdom {
   background-color: #656565;
-  background-image: url("../assets/card-types/ruined-kingdom.svg");
+  --symbol: url("../assets/card-types/ruined-kingdom.svg");
 }
 
 .mario-cards.metro-kingdom {
-  background-color: #f47069;
-  background-image: url("../assets/card-types/metro-kingdom.svg");
+  background-color: #d81a10;
+  --symbol: url("../assets/card-types/metro-kingdom.svg");
 }
 
 .mario-cards.lost-kingdom {
-  background-color: #4b8b3b;
-  background-image: url("../assets/card-types/lost-kingdom.svg");
+  background-color: #3f7d2f;
+  --symbol: url("../assets/card-types/lost-kingdom.svg");
 }
 
 .inner-element {
